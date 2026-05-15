@@ -1,0 +1,131 @@
+{
+  "id": "headless-commerce",
+  "name": "Headless Commerce Cost Calculator",
+  "category": "ecommerce",
+  "icon": "🔌",
+  "description": "Estimate headless commerce platform development costs.",
+  "inputs": [
+    {
+      "id": "hco1",
+      "label": "Commerce Platform",
+      "type": "select",
+      "options": [
+        {
+          "label": "Shopify (Storefront API)",
+          "cost": 5000
+        },
+        {
+          "label": "commercetools",
+          "cost": 15000
+        },
+        {
+          "label": "BigCommerce",
+          "cost": 6000
+        },
+        {
+          "label": "Custom engine",
+          "cost": 30000
+        }
+      ]
+    },
+    {
+      "id": "hco2",
+      "label": "Frontend Stack",
+      "type": "select",
+      "options": [
+        {
+          "label": "Next.js",
+          "cost": 8000
+        },
+        {
+          "label": "Nuxt.js",
+          "cost": 7000
+        },
+        {
+          "label": "Gatsby",
+          "cost": 6000
+        },
+        {
+          "label": "Custom SPA",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "hco3",
+      "label": "CMS",
+      "type": "select",
+      "options": [
+        {
+          "label": "Commerce CMS only",
+          "cost": 0
+        },
+        {
+          "label": "Headless CMS integration",
+          "cost": 4000
+        },
+        {
+          "label": "Multi-CMS setup",
+          "cost": 8000
+        }
+      ]
+    },
+    {
+      "id": "hco4",
+      "label": "Checkout",
+      "type": "select",
+      "options": [
+        {
+          "label": "Platform checkout",
+          "cost": 0
+        },
+        {
+          "label": "Custom checkout flow",
+          "cost": 6000
+        },
+        {
+          "label": "Full custom checkout",
+          "cost": 15000
+        }
+      ]
+    },
+    {
+      "id": "hco5",
+      "label": "Hosting & Performance",
+      "type": "select",
+      "options": [
+        {
+          "label": "Standard CDN",
+          "cost": 1000
+        },
+        {
+          "label": "Edge computing",
+          "cost": 3000
+        },
+        {
+          "label": "Global edge deployment",
+          "cost": 6000
+        }
+      ]
+    },
+    {
+      "id": "hco6",
+      "label": "APIs",
+      "type": "select",
+      "options": [
+        {
+          "label": "Standard APIs",
+          "cost": 2000
+        },
+        {
+          "label": "Custom API layer",
+          "cost": 6000
+        },
+        {
+          "label": "GraphQL federation",
+          "cost": 12000
+        }
+      ]
+    }
+  ]
+}

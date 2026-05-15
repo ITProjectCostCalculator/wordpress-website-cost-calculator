@@ -1,0 +1,112 @@
+{
+  "id": "erp-implementation",
+  "name": "ERP Implementation Cost Calculator",
+  "category": "erp-systems",
+  "icon": "🏢",
+  "description": "Estimate ERP system implementation costs.",
+  "inputs": [
+    {
+      "id": "er1",
+      "label": "User Count",
+      "type": "select",
+      "options": [
+        {
+          "label": "1-10 users",
+          "cost": 15000
+        },
+        {
+          "label": "11-50 users",
+          "cost": 35000
+        },
+        {
+          "label": "51-200 users",
+          "cost": 80000
+        },
+        {
+          "label": "200+ users",
+          "cost": 150000
+        }
+      ]
+    },
+    {
+      "id": "er2",
+      "label": "Modules",
+      "type": "select",
+      "options": [
+        {
+          "label": "Core (Finance + HR)",
+          "cost": 10000
+        },
+        {
+          "label": "Standard (5-7 modules)",
+          "cost": 25000
+        },
+        {
+          "label": "Full suite (10+ modules)",
+          "cost": 50000
+        }
+      ]
+    },
+    {
+      "id": "er3",
+      "label": "Data Migration",
+      "type": "select",
+      "options": [
+        {
+          "label": "Minimal data",
+          "cost": 3000
+        },
+        {
+          "label": "Moderate migration",
+          "cost": 10000
+        },
+        {
+          "label": "Complex legacy migration",
+          "cost": 25000
+        }
+      ]
+    },
+    {
+      "id": "er4",
+      "label": "Customization",
+      "type": "select",
+      "options": [
+        {
+          "label": "Out-of-the-box",
+          "cost": 0
+        },
+        {
+          "label": "Minor customization",
+          "cost": 10000
+        },
+        {
+          "label": "Heavy customization",
+          "cost": 30000
+        }
+      ]
+    },
+    {
+      "id": "er5",
+      "label": "Additional",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Integration with existing tools",
+          "cost": 8000
+        },
+        {
+          "label": "Training program",
+          "cost": 5000
+        },
+        {
+          "label": "Go-live support",
+          "cost": 3000
+        },
+        {
+          "label": "Post-launch support (3 months)",
+          "cost": 8000
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "id": "real-estate-portal",
+  "name": "Real Estate Portal Cost Calculator",
+  "category": "industry-solutions",
+  "icon": "🏠",
+  "description": "Calculate real estate portal development costs.",
+  "inputs": [
+    {
+      "id": "re1",
+      "label": "Listings",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic listings",
+          "cost": 8000
+        },
+        {
+          "label": "Advanced with virtual tours",
+          "cost": 15000
+        },
+        {
+          "label": "Enterprise MLS integration",
+          "cost": 30000
+        }
+      ]
+    },
+    {
+      "id": "re2",
+      "label": "User Roles",
+      "type": "select",
+      "options": [
+        {
+          "label": "Buyer + Agent",
+          "cost": 3000
+        },
+        {
+          "label": "Buyer + Seller + Agent",
+          "cost": 6000
+        },
+        {
+          "label": "Multi-role with agencies",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "re3",
+      "label": "Search & Maps",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic search + list",
+          "cost": 2000
+        },
+        {
+          "label": "Advanced filters + map view",
+          "cost": 5000
+        },
+        {
+          "label": "AI-powered search + neighborhood",
+          "cost": 10000
+        }
+      ]
+    },
+    {
+      "id": "re4",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "CRM integration",
+          "cost": 3000
+        },
+        {
+          "label": "Lead management",
+          "cost": 2000
+        },
+        {
+          "label": "Mortgage calculator",
+          "cost": 1000
+        },
+        {
+          "label": "Virtual tours",
+          "cost": 3000
+        },
+        {
+          "label": "Chat system",
+          "cost": 3000
+        },
+        {
+          "label": "Document management",
+          "cost": 2500
+        }
+      ]
+    }
+  ]
+}

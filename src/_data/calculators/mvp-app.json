@@ -1,0 +1,119 @@
+{
+  "id": "mvp-app",
+  "name": "MVP App Cost Calculator",
+  "category": "mobile-apps",
+  "icon": "🚀",
+  "description": "Calculate the cost of building a minimum viable product app.",
+  "inputs": [
+    {
+      "id": "mv1",
+      "label": "Core Features Count",
+      "type": "select",
+      "options": [
+        {
+          "label": "3-5 core features",
+          "cost": 8000
+        },
+        {
+          "label": "6-10 features",
+          "cost": 15000
+        },
+        {
+          "label": "10+ features",
+          "cost": 25000
+        }
+      ]
+    },
+    {
+      "id": "mv2",
+      "label": "Platform",
+      "type": "select",
+      "options": [
+        {
+          "label": "Single platform",
+          "cost": 0
+        },
+        {
+          "label": "Cross-platform",
+          "cost": 6000
+        }
+      ]
+    },
+    {
+      "id": "mv3",
+      "label": "User Roles",
+      "type": "select",
+      "options": [
+        {
+          "label": "Single role",
+          "cost": 0
+        },
+        {
+          "label": "2-3 roles",
+          "cost": 3000
+        },
+        {
+          "label": "Complex role system",
+          "cost": 6000
+        }
+      ]
+    },
+    {
+      "id": "mv4",
+      "label": "Backend Complexity",
+      "type": "select",
+      "options": [
+        {
+          "label": "Simple (BaaS)",
+          "cost": 2000
+        },
+        {
+          "label": "Custom API",
+          "cost": 6000
+        },
+        {
+          "label": "Complex microservices",
+          "cost": 15000
+        }
+      ]
+    },
+    {
+      "id": "mv5",
+      "label": "Additional",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Admin panel",
+          "cost": 3000
+        },
+        {
+          "label": "Analytics dashboard",
+          "cost": 2000
+        },
+        {
+          "label": "Third-party integrations",
+          "cost": 2500
+        }
+      ]
+    },
+    {
+      "id": "mv6",
+      "label": "Launch Timeline",
+      "type": "select",
+      "options": [
+        {
+          "label": "3-4 months",
+          "cost": 0
+        },
+        {
+          "label": "6-8 weeks",
+          "cost": 5000
+        },
+        {
+          "label": "4 weeks sprint",
+          "cost": 12000
+        }
+      ]
+    }
+  ]
+}

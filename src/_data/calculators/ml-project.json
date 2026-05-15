@@ -1,0 +1,112 @@
+{
+  "id": "ml-project",
+  "name": "Machine Learning Project Cost Calculator",
+  "category": "ai-data",
+  "icon": "📈",
+  "description": "Estimate machine learning project development costs.",
+  "inputs": [
+    {
+      "id": "ml1",
+      "label": "Dataset Size",
+      "type": "select",
+      "options": [
+        {
+          "label": "Small (under 10K samples)",
+          "cost": 5000
+        },
+        {
+          "label": "Medium (10K-100K)",
+          "cost": 12000
+        },
+        {
+          "label": "Large (100K-1M)",
+          "cost": 25000
+        },
+        {
+          "label": "Very large (1M+)",
+          "cost": 50000
+        }
+      ]
+    },
+    {
+      "id": "ml2",
+      "label": "Model Type",
+      "type": "select",
+      "options": [
+        {
+          "label": "Classification/Regression",
+          "cost": 8000
+        },
+        {
+          "label": "NLP model",
+          "cost": 15000
+        },
+        {
+          "label": "Computer Vision",
+          "cost": 20000
+        },
+        {
+          "label": "Deep Learning (custom)",
+          "cost": 35000
+        }
+      ]
+    },
+    {
+      "id": "ml3",
+      "label": "Data Labeling",
+      "type": "select",
+      "options": [
+        {
+          "label": "Pre-labeled data",
+          "cost": 0
+        },
+        {
+          "label": "Semi-automated labeling",
+          "cost": 5000
+        },
+        {
+          "label": "Manual labeling required",
+          "cost": 15000
+        }
+      ]
+    },
+    {
+      "id": "ml4",
+      "label": "Training & Validation",
+      "type": "select",
+      "options": [
+        {
+          "label": "Standard training",
+          "cost": 3000
+        },
+        {
+          "label": "Hyperparameter optimization",
+          "cost": 8000
+        },
+        {
+          "label": "Advanced MLOps pipeline",
+          "cost": 20000
+        }
+      ]
+    },
+    {
+      "id": "ml5",
+      "label": "Deployment",
+      "type": "select",
+      "options": [
+        {
+          "label": "Batch predictions",
+          "cost": 3000
+        },
+        {
+          "label": "Real-time API",
+          "cost": 8000
+        },
+        {
+          "label": "Edge deployment",
+          "cost": 15000
+        }
+      ]
+    }
+  ]
+}

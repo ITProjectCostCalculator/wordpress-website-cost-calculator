@@ -1,0 +1,131 @@
+{
+  "id": "woocommerce",
+  "name": "WooCommerce Development Cost Calculator",
+  "category": "ecommerce",
+  "icon": "🟪",
+  "description": "Estimate WooCommerce store development costs.",
+  "inputs": [
+    {
+      "id": "wc1",
+      "label": "Product Count",
+      "type": "select",
+      "options": [
+        {
+          "label": "Under 50",
+          "cost": 1000
+        },
+        {
+          "label": "50-500",
+          "cost": 2500
+        },
+        {
+          "label": "500-5000",
+          "cost": 5000
+        },
+        {
+          "label": "5000+",
+          "cost": 10000
+        }
+      ]
+    },
+    {
+      "id": "wc2",
+      "label": "Payment Setup",
+      "type": "select",
+      "options": [
+        {
+          "label": "Single gateway",
+          "cost": 500
+        },
+        {
+          "label": "Multiple gateways",
+          "cost": 1500
+        },
+        {
+          "label": "Custom payment flow",
+          "cost": 3000
+        }
+      ]
+    },
+    {
+      "id": "wc3",
+      "label": "Shipping",
+      "type": "select",
+      "options": [
+        {
+          "label": "Simple shipping",
+          "cost": 300
+        },
+        {
+          "label": "Zone-based shipping",
+          "cost": 800
+        },
+        {
+          "label": "Complex shipping rules",
+          "cost": 2000
+        }
+      ]
+    },
+    {
+      "id": "wc4",
+      "label": "Plugins",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic plugins (5-10)",
+          "cost": 500
+        },
+        {
+          "label": "Premium plugins (10-20)",
+          "cost": 2000
+        },
+        {
+          "label": "Custom plugin development",
+          "cost": 5000
+        }
+      ]
+    },
+    {
+      "id": "wc5",
+      "label": "Custom Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Custom product types",
+          "cost": 2000
+        },
+        {
+          "label": "Subscription products",
+          "cost": 2500
+        },
+        {
+          "label": "Bookings/appointments",
+          "cost": 3000
+        },
+        {
+          "label": "Multi-vendor marketplace",
+          "cost": 8000
+        }
+      ]
+    },
+    {
+      "id": "wc6",
+      "label": "Performance",
+      "type": "select",
+      "options": [
+        {
+          "label": "Standard hosting",
+          "cost": 500
+        },
+        {
+          "label": "Optimized hosting",
+          "cost": 1500
+        },
+        {
+          "label": "Enterprise performance",
+          "cost": 4000
+        }
+      ]
+    }
+  ]
+}

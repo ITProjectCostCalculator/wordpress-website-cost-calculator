@@ -1,0 +1,108 @@
+{
+  "id": "dashboard-development",
+  "name": "Dashboard Development Cost Calculator",
+  "category": "web-apps-saas",
+  "icon": "📊",
+  "description": "Estimate custom dashboard and reporting tool costs.",
+  "inputs": [
+    {
+      "id": "db1",
+      "label": "Data Sources",
+      "type": "select",
+      "options": [
+        {
+          "label": "1-2 sources",
+          "cost": 2000
+        },
+        {
+          "label": "3-5 sources",
+          "cost": 5000
+        },
+        {
+          "label": "6+ sources (data warehouse)",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "db2",
+      "label": "Charts & Visualizations",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic charts (5-10)",
+          "cost": 3000
+        },
+        {
+          "label": "Advanced charts (10-20)",
+          "cost": 7000
+        },
+        {
+          "label": "Complex interactive visuals",
+          "cost": 15000
+        }
+      ]
+    },
+    {
+      "id": "db3",
+      "label": "Filters & Interactivity",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic filters",
+          "cost": 1000
+        },
+        {
+          "label": "Advanced drill-down",
+          "cost": 3000
+        },
+        {
+          "label": "AI-powered insights",
+          "cost": 8000
+        }
+      ]
+    },
+    {
+      "id": "db4",
+      "label": "User Roles",
+      "type": "select",
+      "options": [
+        {
+          "label": "Single role",
+          "cost": 0
+        },
+        {
+          "label": "Role-based views",
+          "cost": 3000
+        },
+        {
+          "label": "Custom per-user dashboards",
+          "cost": 6000
+        }
+      ]
+    },
+    {
+      "id": "db5",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Export (PDF/CSV)",
+          "cost": 1500
+        },
+        {
+          "label": "Scheduled reports",
+          "cost": 2000
+        },
+        {
+          "label": "Real-time refresh",
+          "cost": 3000
+        },
+        {
+          "label": "Embedded analytics",
+          "cost": 4000
+        }
+      ]
+    }
+  ]
+}

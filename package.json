@@ -1,0 +1,17 @@
+{
+  "name": "it-project-cost-calculator",
+  "version": "1.0.0",
+  "description": "IT Project Cost Calculator",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy",
+    "cms-proxy": "npx decap-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}

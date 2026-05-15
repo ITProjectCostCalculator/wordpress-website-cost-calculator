@@ -1,0 +1,104 @@
+{
+  "id": "app-maintenance",
+  "name": "App Maintenance Cost Calculator",
+  "category": "mobile-apps",
+  "icon": "🛠️",
+  "description": "Estimate ongoing mobile app maintenance and support costs per month.",
+  "inputs": [
+    {
+      "id": "am1",
+      "label": "Monthly Updates",
+      "type": "select",
+      "options": [
+        {
+          "label": "Bug fixes only",
+          "cost": 500
+        },
+        {
+          "label": "Bug fixes + minor features",
+          "cost": 1200
+        },
+        {
+          "label": "Full ongoing development",
+          "cost": 3000
+        }
+      ]
+    },
+    {
+      "id": "am2",
+      "label": "OS Upgrades",
+      "type": "select",
+      "options": [
+        {
+          "label": "Annual OS compatibility",
+          "cost": 300
+        },
+        {
+          "label": "Immediate OS updates",
+          "cost": 800
+        }
+      ]
+    },
+    {
+      "id": "am3",
+      "label": "Monitoring",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic crash reporting",
+          "cost": 100
+        },
+        {
+          "label": "Full APM monitoring",
+          "cost": 400
+        },
+        {
+          "label": "24/7 monitoring + alerts",
+          "cost": 800
+        }
+      ]
+    },
+    {
+      "id": "am4",
+      "label": "App Store Support",
+      "type": "select",
+      "options": [
+        {
+          "label": "Self-managed",
+          "cost": 0
+        },
+        {
+          "label": "Managed submissions",
+          "cost": 300
+        },
+        {
+          "label": "Full ASO + management",
+          "cost": 800
+        }
+      ]
+    },
+    {
+      "id": "am5",
+      "label": "Support Hours",
+      "type": "select",
+      "options": [
+        {
+          "label": "5 hrs/month",
+          "cost": 200
+        },
+        {
+          "label": "10 hrs/month",
+          "cost": 400
+        },
+        {
+          "label": "20 hrs/month",
+          "cost": 750
+        },
+        {
+          "label": "Unlimited",
+          "cost": 1500
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "id": "website-development",
+  "name": "Website Development Cost Calculator",
+  "category": "web-development",
+  "icon": "🌐",
+  "description": "Estimate the cost of building a custom website based on type, design, features and timeline.",
+  "inputs": [
+    {
+      "id": "w1",
+      "label": "Website Type",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic Informational (5-7 pages)",
+          "cost": 2000
+        },
+        {
+          "label": "Business Website (10-20 pages)",
+          "cost": 5000
+        },
+        {
+          "label": "Corporate Portal (20+ pages)",
+          "cost": 12000
+        },
+        {
+          "label": "Custom Web Application",
+          "cost": 25000
+        }
+      ]
+    },
+    {
+      "id": "w2",
+      "label": "Design Level",
+      "type": "select",
+      "options": [
+        {
+          "label": "Template-based",
+          "cost": 500
+        },
+        {
+          "label": "Custom Design",
+          "cost": 3000
+        },
+        {
+          "label": "Premium UI/UX",
+          "cost": 8000
+        }
+      ]
+    },
+    {
+      "id": "w3",
+      "label": "CMS Integration",
+      "type": "select",
+      "options": [
+        {
+          "label": "No CMS",
+          "cost": 0
+        },
+        {
+          "label": "WordPress",
+          "cost": 1000
+        },
+        {
+          "label": "Custom CMS",
+          "cost": 5000
+        }
+      ]
+    },
+    {
+      "id": "w4",
+      "label": "Number of Pages",
+      "type": "range",
+      "min": 1,
+      "max": 50,
+      "default": 5,
+      "costPerUnit": 200,
+      "unit": "pages"
+    },
+    {
+      "id": "w5",
+      "label": "Additional Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Contact Forms",
+          "cost": 300
+        },
+        {
+          "label": "SEO Setup",
+          "cost": 800
+        },
+        {
+          "label": "Blog Section",
+          "cost": 600
+        },
+        {
+          "label": "Third-party Integrations",
+          "cost": 1500
+        },
+        {
+          "label": "Multilingual Support",
+          "cost": 2000
+        }
+      ]
+    },
+    {
+      "id": "w6",
+      "label": "Timeline",
+      "type": "select",
+      "options": [
+        {
+          "label": "Standard (8-12 weeks)",
+          "cost": 0
+        },
+        {
+          "label": "Accelerated (4-6 weeks)",
+          "cost": 3000
+        },
+        {
+          "label": "Rush (2-3 weeks)",
+          "cost": 8000
+        }
+      ]
+    }
+  ]
+}

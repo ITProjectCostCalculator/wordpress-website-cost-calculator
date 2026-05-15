@@ -1,0 +1,116 @@
+{
+  "id": "cybersecurity-audit",
+  "name": "Cybersecurity Audit Cost Calculator",
+  "category": "industry-solutions",
+  "icon": "🔐",
+  "description": "Estimate cybersecurity audit and assessment costs.",
+  "inputs": [
+    {
+      "id": "cy1",
+      "label": "Asset Count",
+      "type": "select",
+      "options": [
+        {
+          "label": "1-10 assets",
+          "cost": 3000
+        },
+        {
+          "label": "11-50 assets",
+          "cost": 8000
+        },
+        {
+          "label": "50-200 assets",
+          "cost": 18000
+        },
+        {
+          "label": "200+ assets",
+          "cost": 35000
+        }
+      ]
+    },
+    {
+      "id": "cy2",
+      "label": "Scan Depth",
+      "type": "select",
+      "options": [
+        {
+          "label": "Vulnerability scan",
+          "cost": 2000
+        },
+        {
+          "label": "Full security assessment",
+          "cost": 6000
+        },
+        {
+          "label": "Advanced threat analysis",
+          "cost": 15000
+        }
+      ]
+    },
+    {
+      "id": "cy3",
+      "label": "Compliance",
+      "type": "select",
+      "options": [
+        {
+          "label": "No compliance needed",
+          "cost": 0
+        },
+        {
+          "label": "SOC 2",
+          "cost": 5000
+        },
+        {
+          "label": "PCI DSS",
+          "cost": 8000
+        },
+        {
+          "label": "HIPAA",
+          "cost": 10000
+        },
+        {
+          "label": "ISO 27001",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "cy4",
+      "label": "Report",
+      "type": "select",
+      "options": [
+        {
+          "label": "Summary report",
+          "cost": 0
+        },
+        {
+          "label": "Detailed report",
+          "cost": 1000
+        },
+        {
+          "label": "Executive + technical report",
+          "cost": 3000
+        }
+      ]
+    },
+    {
+      "id": "cy5",
+      "label": "Additional",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Remediation review",
+          "cost": 3000
+        },
+        {
+          "label": "Staff training",
+          "cost": 2000
+        },
+        {
+          "label": "Incident response plan",
+          "cost": 4000
+        }
+      ]
+    }
+  ]
+}

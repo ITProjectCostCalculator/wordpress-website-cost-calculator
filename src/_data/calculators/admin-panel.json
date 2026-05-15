@@ -1,0 +1,84 @@
+{
+  "id": "admin-panel",
+  "name": "Admin Panel Development Cost Calculator",
+  "category": "web-apps-saas",
+  "icon": "⚙️",
+  "description": "Calculate admin panel and back-office tool development costs.",
+  "inputs": [
+    {
+      "id": "ap1",
+      "label": "Modules",
+      "type": "select",
+      "options": [
+        {
+          "label": "3-5 modules",
+          "cost": 5000
+        },
+        {
+          "label": "6-10 modules",
+          "cost": 10000
+        },
+        {
+          "label": "10+ modules",
+          "cost": 20000
+        }
+      ]
+    },
+    {
+      "id": "ap2",
+      "label": "Permission System",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic admin/viewer",
+          "cost": 1000
+        },
+        {
+          "label": "Role-based access",
+          "cost": 3000
+        },
+        {
+          "label": "Granular permissions",
+          "cost": 6000
+        }
+      ]
+    },
+    {
+      "id": "ap3",
+      "label": "CRUD Screens",
+      "type": "range",
+      "min": 3,
+      "max": 30,
+      "default": 8,
+      "costPerUnit": 400,
+      "unit": "screens"
+    },
+    {
+      "id": "ap4",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Advanced reporting",
+          "cost": 3000
+        },
+        {
+          "label": "Audit logs",
+          "cost": 2000
+        },
+        {
+          "label": "Bulk operations",
+          "cost": 1500
+        },
+        {
+          "label": "Data import/export",
+          "cost": 2000
+        },
+        {
+          "label": "Activity dashboard",
+          "cost": 2500
+        }
+      ]
+    }
+  ]
+}

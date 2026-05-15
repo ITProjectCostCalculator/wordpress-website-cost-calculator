@@ -1,0 +1,127 @@
+{
+  "id": "saas-development",
+  "name": "SaaS Development Cost Calculator",
+  "category": "web-apps-saas",
+  "icon": "☁️",
+  "description": "Calculate SaaS platform development costs including billing and multi-tenancy.",
+  "inputs": [
+    {
+      "id": "sa1",
+      "label": "Tenant Structure",
+      "type": "select",
+      "options": [
+        {
+          "label": "Single-tenant",
+          "cost": 10000
+        },
+        {
+          "label": "Multi-tenant (shared DB)",
+          "cost": 20000
+        },
+        {
+          "label": "Multi-tenant (isolated DB)",
+          "cost": 35000
+        }
+      ]
+    },
+    {
+      "id": "sa2",
+      "label": "Subscription & Billing",
+      "type": "select",
+      "options": [
+        {
+          "label": "Simple plans (Stripe)",
+          "cost": 3000
+        },
+        {
+          "label": "Complex billing (usage-based)",
+          "cost": 8000
+        },
+        {
+          "label": "Enterprise billing + invoicing",
+          "cost": 15000
+        }
+      ]
+    },
+    {
+      "id": "sa3",
+      "label": "User Roles",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic (admin/user)",
+          "cost": 2000
+        },
+        {
+          "label": "Team-based roles",
+          "cost": 5000
+        },
+        {
+          "label": "Organization hierarchy",
+          "cost": 10000
+        }
+      ]
+    },
+    {
+      "id": "sa4",
+      "label": "Dashboards",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic metrics",
+          "cost": 3000
+        },
+        {
+          "label": "Interactive dashboards",
+          "cost": 8000
+        },
+        {
+          "label": "Custom analytics engine",
+          "cost": 18000
+        }
+      ]
+    },
+    {
+      "id": "sa5",
+      "label": "Integrations",
+      "type": "select",
+      "options": [
+        {
+          "label": "2-3 integrations",
+          "cost": 3000
+        },
+        {
+          "label": "5-10 integrations",
+          "cost": 8000
+        },
+        {
+          "label": "Open API + marketplace",
+          "cost": 20000
+        }
+      ]
+    },
+    {
+      "id": "sa6",
+      "label": "Additional",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "White-labeling",
+          "cost": 5000
+        },
+        {
+          "label": "API documentation portal",
+          "cost": 3000
+        },
+        {
+          "label": "Onboarding wizard",
+          "cost": 2000
+        },
+        {
+          "label": "Email system",
+          "cost": 2500
+        }
+      ]
+    }
+  ]
+}

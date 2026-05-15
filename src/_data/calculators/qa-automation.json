@@ -1,0 +1,116 @@
+{
+  "id": "qa-automation",
+  "name": "QA Automation Cost Calculator",
+  "category": "cloud-devops",
+  "icon": "⚙️",
+  "description": "Calculate QA automation framework and testing costs.",
+  "inputs": [
+    {
+      "id": "qa1",
+      "label": "Test Cases",
+      "type": "select",
+      "options": [
+        {
+          "label": "Under 50",
+          "cost": 3000
+        },
+        {
+          "label": "50-200",
+          "cost": 8000
+        },
+        {
+          "label": "200-500",
+          "cost": 15000
+        },
+        {
+          "label": "500+",
+          "cost": 25000
+        }
+      ]
+    },
+    {
+      "id": "qa2",
+      "label": "Framework",
+      "type": "select",
+      "options": [
+        {
+          "label": "Selenium",
+          "cost": 2000
+        },
+        {
+          "label": "Cypress",
+          "cost": 2000
+        },
+        {
+          "label": "Playwright",
+          "cost": 2000
+        },
+        {
+          "label": "Appium (mobile)",
+          "cost": 3000
+        },
+        {
+          "label": "Custom framework",
+          "cost": 6000
+        }
+      ]
+    },
+    {
+      "id": "qa3",
+      "label": "Browser Coverage",
+      "type": "select",
+      "options": [
+        {
+          "label": "Chrome only",
+          "cost": 0
+        },
+        {
+          "label": "Top 3 browsers",
+          "cost": 1000
+        },
+        {
+          "label": "All major browsers",
+          "cost": 2500
+        }
+      ]
+    },
+    {
+      "id": "qa4",
+      "label": "CI/CD Integration",
+      "type": "select",
+      "options": [
+        {
+          "label": "Manual trigger",
+          "cost": 500
+        },
+        {
+          "label": "CI/CD integrated",
+          "cost": 2000
+        },
+        {
+          "label": "Full pipeline integration",
+          "cost": 4000
+        }
+      ]
+    },
+    {
+      "id": "qa5",
+      "label": "Maintenance",
+      "type": "select",
+      "options": [
+        {
+          "label": "One-time setup",
+          "cost": 0
+        },
+        {
+          "label": "Monthly maintenance",
+          "cost": 1500
+        },
+        {
+          "label": "Continuous maintenance",
+          "cost": 3000
+        }
+      ]
+    }
+  ]
+}

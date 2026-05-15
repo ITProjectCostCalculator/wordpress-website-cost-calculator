@@ -1,0 +1,108 @@
+{
+  "id": "ai-chatbot",
+  "name": "AI Chatbot Development Cost Calculator",
+  "category": "ai-data",
+  "icon": "💬",
+  "description": "Calculate AI chatbot development and deployment costs.",
+  "inputs": [
+    {
+      "id": "cb1",
+      "label": "Channels",
+      "type": "select",
+      "options": [
+        {
+          "label": "Web chat only",
+          "cost": 3000
+        },
+        {
+          "label": "Web + mobile",
+          "cost": 6000
+        },
+        {
+          "label": "Omnichannel (web, mobile, WhatsApp, Slack)",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "cb2",
+      "label": "Training Data",
+      "type": "select",
+      "options": [
+        {
+          "label": "FAQ-based (under 100 Q&As)",
+          "cost": 2000
+        },
+        {
+          "label": "Document-trained (knowledge base)",
+          "cost": 6000
+        },
+        {
+          "label": "Custom domain training",
+          "cost": 15000
+        }
+      ]
+    },
+    {
+      "id": "cb3",
+      "label": "CRM Integration",
+      "type": "select",
+      "options": [
+        {
+          "label": "No CRM",
+          "cost": 0
+        },
+        {
+          "label": "Basic CRM sync",
+          "cost": 3000
+        },
+        {
+          "label": "Deep CRM integration",
+          "cost": 7000
+        }
+      ]
+    },
+    {
+      "id": "cb4",
+      "label": "Live Handoff",
+      "type": "select",
+      "options": [
+        {
+          "label": "No handoff",
+          "cost": 0
+        },
+        {
+          "label": "Basic agent handoff",
+          "cost": 2000
+        },
+        {
+          "label": "Smart routing + handoff",
+          "cost": 5000
+        }
+      ]
+    },
+    {
+      "id": "cb5",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Multi-language support",
+          "cost": 3000
+        },
+        {
+          "label": "Sentiment analysis",
+          "cost": 2000
+        },
+        {
+          "label": "Analytics dashboard",
+          "cost": 2500
+        },
+        {
+          "label": "Voice support",
+          "cost": 4000
+        }
+      ]
+    }
+  ]
+}

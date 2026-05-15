@@ -1,0 +1,108 @@
+{
+  "id": "ai-agent",
+  "name": "AI Agent Development Cost Calculator",
+  "category": "ai-data",
+  "icon": "🤖",
+  "description": "Estimate autonomous AI agent development costs.",
+  "inputs": [
+    {
+      "id": "ag1",
+      "label": "Task Complexity",
+      "type": "select",
+      "options": [
+        {
+          "label": "Simple (single task)",
+          "cost": 10000
+        },
+        {
+          "label": "Multi-step tasks",
+          "cost": 25000
+        },
+        {
+          "label": "Complex autonomous agent",
+          "cost": 50000
+        }
+      ]
+    },
+    {
+      "id": "ag2",
+      "label": "Tools/API Access",
+      "type": "select",
+      "options": [
+        {
+          "label": "1-3 tools",
+          "cost": 3000
+        },
+        {
+          "label": "4-8 tools",
+          "cost": 8000
+        },
+        {
+          "label": "10+ tools + custom",
+          "cost": 18000
+        }
+      ]
+    },
+    {
+      "id": "ag3",
+      "label": "Memory & Context",
+      "type": "select",
+      "options": [
+        {
+          "label": "Stateless",
+          "cost": 0
+        },
+        {
+          "label": "Session memory",
+          "cost": 3000
+        },
+        {
+          "label": "Long-term memory (vector DB)",
+          "cost": 8000
+        }
+      ]
+    },
+    {
+      "id": "ag4",
+      "label": "Monitoring",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic logging",
+          "cost": 1000
+        },
+        {
+          "label": "Full observability",
+          "cost": 4000
+        },
+        {
+          "label": "Advanced monitoring + alerts",
+          "cost": 8000
+        }
+      ]
+    },
+    {
+      "id": "ag5",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Approval workflows",
+          "cost": 3000
+        },
+        {
+          "label": "Data access controls",
+          "cost": 2000
+        },
+        {
+          "label": "Human-in-the-loop",
+          "cost": 4000
+        },
+        {
+          "label": "Multi-agent orchestration",
+          "cost": 8000
+        }
+      ]
+    }
+  ]
+}

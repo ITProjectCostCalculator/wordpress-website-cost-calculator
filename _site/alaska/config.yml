@@ -1,0 +1,76 @@
+backend:
+  name: github
+  repo: your-github-username/your-repo-name # IMPORTANT: Update this before pushing!
+  branch: main # Branch to update
+
+local_backend: true # Allows local testing
+
+media_folder: "src/images" # Media files will be stored in the repo under src/images
+public_folder: "/images" # The src attribute for uploaded media will begin with /images
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "src/_data/homepage.json"
+        label: "Homepage"
+        name: "homepage"
+        fields:
+          - {label: "Hero Title", name: "heroTitle", widget: "string"}
+          - {label: "Hero Subtitle", name: "heroSubtitle", widget: "text"}
+          - {label: "SEO Title", name: "seoTitle", widget: "string"}
+          - {label: "SEO Description", name: "seoDescription", widget: "text"}
+          
+      - file: "src/_data/blogSettings.json"
+        label: "Blog Settings"
+        name: "blogSettings"
+        fields:
+          - {label: "Blog Main Page Title", name: "blogTitle", widget: "string"}
+          - {label: "Blog Main Page Description", name: "blogDescription", widget: "text"}
+
+  - name: "calculators"
+    label: "Calculators"
+    folder: "src/_data/calculators"
+    create: true
+    format: "json"
+    extension: "json"
+    identifier_field: "name"
+    fields:
+      - {label: "ID (URL slug)", name: "id", widget: "string"}
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Category", name: "category", widget: "select", options: ["web-development", "mobile-apps", "web-apps-saas", "erp-systems", "ecommerce", "ai-data", "cloud-devops", "industry-solutions"]}
+      - {label: "Icon (Emoji)", name: "icon", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - label: "Inputs"
+        name: "inputs"
+        widget: "list"
+        fields:
+          - {label: "Input ID", name: "id", widget: "string"}
+          - {label: "Label", name: "label", widget: "string"}
+          - {label: "Type", name: "type", widget: "select", options: ["select", "checkbox", "range"]}
+          - {label: "Default (for range)", name: "default", widget: "number", required: false}
+          - {label: "Min (for range)", name: "min", widget: "number", required: false}
+          - {label: "Max (for range)", name: "max", widget: "number", required: false}
+          - {label: "Cost Per Unit (for range)", name: "costPerUnit", widget: "number", required: false}
+          - {label: "Unit (for range)", name: "unit", widget: "string", required: false}
+          - label: "Options"
+            name: "options"
+            widget: "list"
+            required: false
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "Cost", name: "cost", widget: "number"}
+
+  - name: "blog"
+    label: "Blog Posts"
+    folder: "src/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Custom URL Slug", name: "customSlug", widget: "string", required: false, hint: "Leave blank to auto-generate from the Title. Example: 'my-custom-post'"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Category", name: "category", widget: "string"}
+      - {label: "SEO Title", name: "seoTitle", widget: "string"}
+      - {label: "SEO Description", name: "seoDescription", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}

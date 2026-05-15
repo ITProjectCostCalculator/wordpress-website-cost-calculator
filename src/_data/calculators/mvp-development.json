@@ -1,0 +1,127 @@
+{
+  "id": "mvp-development",
+  "name": "MVP Development Cost Calculator",
+  "category": "web-apps-saas",
+  "icon": "💡",
+  "description": "Estimate MVP development costs for your startup idea.",
+  "inputs": [
+    {
+      "id": "mvd1",
+      "label": "Product Type",
+      "type": "select",
+      "options": [
+        {
+          "label": "Web app",
+          "cost": 8000
+        },
+        {
+          "label": "Mobile app",
+          "cost": 12000
+        },
+        {
+          "label": "Web + Mobile",
+          "cost": 18000
+        }
+      ]
+    },
+    {
+      "id": "mvd2",
+      "label": "Must-have Features",
+      "type": "select",
+      "options": [
+        {
+          "label": "3-5 features",
+          "cost": 5000
+        },
+        {
+          "label": "6-10 features",
+          "cost": 12000
+        },
+        {
+          "label": "10+ features",
+          "cost": 22000
+        }
+      ]
+    },
+    {
+      "id": "mvd3",
+      "label": "UI Level",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic functional UI",
+          "cost": 2000
+        },
+        {
+          "label": "Polished UI",
+          "cost": 5000
+        },
+        {
+          "label": "Premium design",
+          "cost": 10000
+        }
+      ]
+    },
+    {
+      "id": "mvd4",
+      "label": "Backend Complexity",
+      "type": "select",
+      "options": [
+        {
+          "label": "Simple BaaS",
+          "cost": 2000
+        },
+        {
+          "label": "Custom backend",
+          "cost": 6000
+        },
+        {
+          "label": "Complex architecture",
+          "cost": 15000
+        }
+      ]
+    },
+    {
+      "id": "mvd5",
+      "label": "Integrations",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Payment processing",
+          "cost": 2000
+        },
+        {
+          "label": "Email/SMS notifications",
+          "cost": 1000
+        },
+        {
+          "label": "Social login",
+          "cost": 800
+        },
+        {
+          "label": "Analytics",
+          "cost": 500
+        }
+      ]
+    },
+    {
+      "id": "mvd6",
+      "label": "Launch Timeline",
+      "type": "select",
+      "options": [
+        {
+          "label": "3-4 months",
+          "cost": 0
+        },
+        {
+          "label": "6-8 weeks",
+          "cost": 5000
+        },
+        {
+          "label": "4 weeks",
+          "cost": 12000
+        }
+      ]
+    }
+  ]
+}

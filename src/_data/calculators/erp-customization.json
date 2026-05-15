@@ -1,0 +1,108 @@
+{
+  "id": "erp-customization",
+  "name": "ERP Customization Cost Calculator",
+  "category": "erp-systems",
+  "icon": "🔨",
+  "description": "Estimate ERP customization and enhancement costs.",
+  "inputs": [
+    {
+      "id": "ec1",
+      "label": "Custom Workflows",
+      "type": "select",
+      "options": [
+        {
+          "label": "1-3 workflows",
+          "cost": 3000
+        },
+        {
+          "label": "4-10 workflows",
+          "cost": 8000
+        },
+        {
+          "label": "10+ workflows",
+          "cost": 18000
+        }
+      ]
+    },
+    {
+      "id": "ec2",
+      "label": "Custom Reports",
+      "type": "select",
+      "options": [
+        {
+          "label": "1-5 reports",
+          "cost": 2000
+        },
+        {
+          "label": "6-15 reports",
+          "cost": 5000
+        },
+        {
+          "label": "15+ reports",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "ec3",
+      "label": "Approval Processes",
+      "type": "select",
+      "options": [
+        {
+          "label": "Simple approvals",
+          "cost": 2000
+        },
+        {
+          "label": "Multi-level approvals",
+          "cost": 5000
+        },
+        {
+          "label": "Complex approval matrix",
+          "cost": 10000
+        }
+      ]
+    },
+    {
+      "id": "ec4",
+      "label": "Custom Modules",
+      "type": "select",
+      "options": [
+        {
+          "label": "Minor extensions",
+          "cost": 3000
+        },
+        {
+          "label": "Custom module",
+          "cost": 10000
+        },
+        {
+          "label": "Multiple custom modules",
+          "cost": 25000
+        }
+      ]
+    },
+    {
+      "id": "ec5",
+      "label": "Additional",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "User role customization",
+          "cost": 2000
+        },
+        {
+          "label": "Automation rules",
+          "cost": 3000
+        },
+        {
+          "label": "API customization",
+          "cost": 4000
+        },
+        {
+          "label": "Testing & QA",
+          "cost": 3000
+        }
+      ]
+    }
+  ]
+}

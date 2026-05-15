@@ -1,0 +1,60 @@
+---
+layout: layouts/base.njk
+permalink: "/blog/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber + 1 }}/{% endif %}index.html"
+pagination:
+  data: collections.blog
+  size: 20
+  alias: posts
+  reverse: true
+seoTitle: "{{ blogSettings.blogTitle | default('Blog - IT Project Cost Calculator') }}"
+seoDescription: "{{ blogSettings.blogDescription | default('Read our latest insights, guides, and tips on IT project cost estimation.') }}"
+---
+<main id="blog-view" style="padding-top: calc(var(--header-h) + 40px); padding-bottom: 60px;">
+    <div class="search-section">
+        <div class="calc-breadcrumb" style="margin-bottom: 20px;">
+            <a href="/">Home</a> <span>›</span> 
+            <span>Blog</span>
+        </div>
+    </div>
+
+    <section class="hero" style="padding-top: 0; padding-bottom: 40px;">
+        <div class="hero-inner">
+            <h1 class="hero-title gradient-text">{{ blogSettings.blogTitle | default('Our Blog') }}</h1>
+            <p class="hero-subtitle">{{ blogSettings.blogDescription }}</p>
+        </div>
+    </section>
+
+    <div class="grid-section">
+        <div class="calculator-grid">
+            {% for post in posts %}
+            <a href="{{ post.url }}" class="calc-card">
+                <div class="calc-card-name" style="font-size: 1.1rem; margin-bottom: 12px;">{{ post.data.title }}</div>
+                {% if post.data.category %}
+                <span class="calc-card-category" style="margin-bottom: 12px;">{{ post.data.category }}</span>
+                {% endif %}
+                <div style="color: var(--text-muted); font-size: 0.85rem; display: flex; align-items: center; gap: 6px;">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    {{ post.date | date("MMM DD, YYYY") }}
+                </div>
+            </a>
+            {% else %}
+            <div class="no-results" style="grid-column: 1 / -1;">
+                <div class="no-results-icon">📝</div>
+                <h3>No blog posts yet</h3>
+                <p>Check back later for new content!</p>
+            </div>
+            {% endfor %}
+        </div>
+
+        {% if pagination.pages.length > 1 %}
+        <div class="pagination" style="display: flex; justify-content: center; gap: 12px; margin-top: 60px;">
+            {% if pagination.href.previous %}
+                <a href="{{ pagination.href.previous }}" class="btn btn-primary" style="width: auto;">Previous Page</a>
+            {% endif %}
+            {% if pagination.href.next %}
+                <a href="{{ pagination.href.next }}" class="btn btn-primary" style="width: auto;">Next Page</a>
+            {% endif %}
+        </div>
+        {% endif %}
+    </div>
+</main>

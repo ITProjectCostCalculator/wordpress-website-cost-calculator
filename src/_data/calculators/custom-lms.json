@@ -1,0 +1,97 @@
+{
+  "id": "custom-lms",
+  "name": "Custom LMS Development Cost Calculator",
+  "category": "industry-solutions",
+  "icon": "🎓",
+  "description": "Calculate custom Learning Management System costs.",
+  "inputs": [
+    {
+      "id": "lm1",
+      "label": "Course Types",
+      "type": "select",
+      "options": [
+        {
+          "label": "Video courses only",
+          "cost": 10000
+        },
+        {
+          "label": "Mixed media courses",
+          "cost": 18000
+        },
+        {
+          "label": "Interactive + live classes",
+          "cost": 30000
+        }
+      ]
+    },
+    {
+      "id": "lm2",
+      "label": "User Roles",
+      "type": "select",
+      "options": [
+        {
+          "label": "Student + Admin",
+          "cost": 3000
+        },
+        {
+          "label": "Student + Instructor + Admin",
+          "cost": 6000
+        },
+        {
+          "label": "Multi-role with organizations",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "lm3",
+      "label": "Assessment",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic quizzes",
+          "cost": 2000
+        },
+        {
+          "label": "Advanced assessments",
+          "cost": 5000
+        },
+        {
+          "label": "Proctored exams",
+          "cost": 10000
+        }
+      ]
+    },
+    {
+      "id": "lm4",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Certificates",
+          "cost": 2000
+        },
+        {
+          "label": "Payment / subscriptions",
+          "cost": 3000
+        },
+        {
+          "label": "Progress tracking",
+          "cost": 1500
+        },
+        {
+          "label": "Discussion forums",
+          "cost": 2000
+        },
+        {
+          "label": "Reporting dashboard",
+          "cost": 3000
+        },
+        {
+          "label": "Mobile app",
+          "cost": 10000
+        }
+      ]
+    }
+  ]
+}

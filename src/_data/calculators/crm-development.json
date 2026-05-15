@@ -1,0 +1,108 @@
+{
+  "id": "crm-development",
+  "name": "CRM Development Cost Calculator",
+  "category": "web-apps-saas",
+  "icon": "📇",
+  "description": "Calculate custom CRM system development costs.",
+  "inputs": [
+    {
+      "id": "cr1",
+      "label": "Contact Management",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic contacts & leads",
+          "cost": 5000
+        },
+        {
+          "label": "Advanced segmentation",
+          "cost": 10000
+        },
+        {
+          "label": "Enterprise contact management",
+          "cost": 20000
+        }
+      ]
+    },
+    {
+      "id": "cr2",
+      "label": "Sales Pipeline",
+      "type": "select",
+      "options": [
+        {
+          "label": "Simple pipeline",
+          "cost": 3000
+        },
+        {
+          "label": "Multi-pipeline + stages",
+          "cost": 7000
+        },
+        {
+          "label": "AI-powered pipeline",
+          "cost": 15000
+        }
+      ]
+    },
+    {
+      "id": "cr3",
+      "label": "Automation",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic workflows",
+          "cost": 2000
+        },
+        {
+          "label": "Advanced automation",
+          "cost": 6000
+        },
+        {
+          "label": "AI-driven automation",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "cr4",
+      "label": "Reports & Analytics",
+      "type": "select",
+      "options": [
+        {
+          "label": "Standard reports",
+          "cost": 2000
+        },
+        {
+          "label": "Custom dashboards",
+          "cost": 5000
+        },
+        {
+          "label": "Advanced BI analytics",
+          "cost": 10000
+        }
+      ]
+    },
+    {
+      "id": "cr5",
+      "label": "Integrations",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Email integration",
+          "cost": 2000
+        },
+        {
+          "label": "Calendar sync",
+          "cost": 1500
+        },
+        {
+          "label": "Phone/VoIP",
+          "cost": 3000
+        },
+        {
+          "label": "Marketing tools",
+          "cost": 2500
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "id": "headless-cms",
+  "name": "Headless CMS Development Cost Calculator",
+  "category": "web-development",
+  "icon": "⚡",
+  "description": "Calculate headless CMS setup costs with frontend framework and API integration.",
+  "inputs": [
+    {
+      "id": "hc1",
+      "label": "CMS Platform",
+      "type": "select",
+      "options": [
+        {
+          "label": "Strapi",
+          "cost": 2000
+        },
+        {
+          "label": "Contentful",
+          "cost": 3000
+        },
+        {
+          "label": "Sanity",
+          "cost": 2500
+        },
+        {
+          "label": "Custom headless CMS",
+          "cost": 10000
+        }
+      ]
+    },
+    {
+      "id": "hc2",
+      "label": "Frontend Stack",
+      "type": "select",
+      "options": [
+        {
+          "label": "Next.js",
+          "cost": 5000
+        },
+        {
+          "label": "Gatsby",
+          "cost": 4000
+        },
+        {
+          "label": "Nuxt.js",
+          "cost": 4500
+        },
+        {
+          "label": "Custom React/Vue",
+          "cost": 7000
+        }
+      ]
+    },
+    {
+      "id": "hc3",
+      "label": "Content Models",
+      "type": "select",
+      "options": [
+        {
+          "label": "Simple (3-5 models)",
+          "cost": 1000
+        },
+        {
+          "label": "Moderate (6-15 models)",
+          "cost": 3000
+        },
+        {
+          "label": "Complex (15+ models)",
+          "cost": 6000
+        }
+      ]
+    },
+    {
+      "id": "hc4",
+      "label": "API Endpoints",
+      "type": "select",
+      "options": [
+        {
+          "label": "5-10 endpoints",
+          "cost": 1500
+        },
+        {
+          "label": "10-25 endpoints",
+          "cost": 4000
+        },
+        {
+          "label": "25+ endpoints",
+          "cost": 8000
+        }
+      ]
+    },
+    {
+      "id": "hc5",
+      "label": "Additional",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Preview/draft mode",
+          "cost": 1500
+        },
+        {
+          "label": "Image optimization pipeline",
+          "cost": 1000
+        },
+        {
+          "label": "Search functionality",
+          "cost": 2000
+        },
+        {
+          "label": "Hosting & CI/CD setup",
+          "cost": 1500
+        }
+      ]
+    }
+  ]
+}

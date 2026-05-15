@@ -1,0 +1,112 @@
+{
+  "id": "wordpress-plugin",
+  "name": "WordPress Plugin Development Cost Calculator",
+  "category": "web-development",
+  "icon": "🔌",
+  "description": "Estimate the cost of custom WordPress plugin development.",
+  "inputs": [
+    {
+      "id": "wpp1",
+      "label": "Plugin Complexity",
+      "type": "select",
+      "options": [
+        {
+          "label": "Simple (single feature)",
+          "cost": 2000
+        },
+        {
+          "label": "Moderate (multiple features)",
+          "cost": 6000
+        },
+        {
+          "label": "Complex (full application)",
+          "cost": 15000
+        },
+        {
+          "label": "Enterprise-grade",
+          "cost": 30000
+        }
+      ]
+    },
+    {
+      "id": "wpp2",
+      "label": "Admin Settings Panel",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic settings page",
+          "cost": 500
+        },
+        {
+          "label": "Advanced settings with tabs",
+          "cost": 1500
+        },
+        {
+          "label": "Custom React-based admin",
+          "cost": 4000
+        }
+      ]
+    },
+    {
+      "id": "wpp3",
+      "label": "API Integrations",
+      "type": "select",
+      "options": [
+        {
+          "label": "No API",
+          "cost": 0
+        },
+        {
+          "label": "1-2 APIs",
+          "cost": 1500
+        },
+        {
+          "label": "3+ APIs",
+          "cost": 4000
+        }
+      ]
+    },
+    {
+      "id": "wpp4",
+      "label": "User Role Management",
+      "type": "select",
+      "options": [
+        {
+          "label": "Not needed",
+          "cost": 0
+        },
+        {
+          "label": "Basic roles",
+          "cost": 800
+        },
+        {
+          "label": "Advanced RBAC",
+          "cost": 2500
+        }
+      ]
+    },
+    {
+      "id": "wpp5",
+      "label": "Additional",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Security audit",
+          "cost": 1000
+        },
+        {
+          "label": "Unit testing",
+          "cost": 1500
+        },
+        {
+          "label": "Documentation",
+          "cost": 800
+        },
+        {
+          "label": "WordPress.org submission",
+          "cost": 500
+        }
+      ]
+    }
+  ]
+}

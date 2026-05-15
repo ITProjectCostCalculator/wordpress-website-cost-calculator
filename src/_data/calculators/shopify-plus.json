@@ -1,0 +1,112 @@
+{
+  "id": "shopify-plus",
+  "name": "Shopify Plus Development Cost Calculator",
+  "category": "ecommerce",
+  "icon": "💎",
+  "description": "Estimate Shopify Plus enterprise store development costs.",
+  "inputs": [
+    {
+      "id": "sp1",
+      "label": "Store Complexity",
+      "type": "select",
+      "options": [
+        {
+          "label": "Single store",
+          "cost": 10000
+        },
+        {
+          "label": "Multi-store (2-3)",
+          "cost": 25000
+        },
+        {
+          "label": "Enterprise multi-store",
+          "cost": 50000
+        }
+      ]
+    },
+    {
+      "id": "sp2",
+      "label": "Checkout Extensions",
+      "type": "select",
+      "options": [
+        {
+          "label": "Standard checkout",
+          "cost": 0
+        },
+        {
+          "label": "Custom checkout UI",
+          "cost": 5000
+        },
+        {
+          "label": "Advanced checkout (scripts + extensions)",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "sp3",
+      "label": "B2B Features",
+      "type": "select",
+      "options": [
+        {
+          "label": "Not needed",
+          "cost": 0
+        },
+        {
+          "label": "Basic B2B catalog",
+          "cost": 5000
+        },
+        {
+          "label": "Full B2B portal",
+          "cost": 15000
+        }
+      ]
+    },
+    {
+      "id": "sp4",
+      "label": "ERP Integration",
+      "type": "select",
+      "options": [
+        {
+          "label": "No ERP",
+          "cost": 0
+        },
+        {
+          "label": "Basic sync",
+          "cost": 5000
+        },
+        {
+          "label": "Full ERP integration",
+          "cost": 15000
+        }
+      ]
+    },
+    {
+      "id": "sp5",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Custom apps",
+          "cost": 5000
+        },
+        {
+          "label": "Headless setup",
+          "cost": 8000
+        },
+        {
+          "label": "Flow automation",
+          "cost": 3000
+        },
+        {
+          "label": "Launchpad",
+          "cost": 2000
+        },
+        {
+          "label": "Scripts",
+          "cost": 3000
+        }
+      ]
+    }
+  ]
+}

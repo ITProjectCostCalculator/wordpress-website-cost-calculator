@@ -1,0 +1,112 @@
+{
+  "id": "sap-b1",
+  "name": "SAP Business One Implementation Cost Calculator",
+  "category": "erp-systems",
+  "icon": "🔷",
+  "description": "Estimate SAP Business One implementation costs.",
+  "inputs": [
+    {
+      "id": "sb1",
+      "label": "Users",
+      "type": "select",
+      "options": [
+        {
+          "label": "1-5 users",
+          "cost": 25000
+        },
+        {
+          "label": "6-20 users",
+          "cost": 50000
+        },
+        {
+          "label": "21-50 users",
+          "cost": 90000
+        },
+        {
+          "label": "50+ users",
+          "cost": 150000
+        }
+      ]
+    },
+    {
+      "id": "sb2",
+      "label": "License Type",
+      "type": "select",
+      "options": [
+        {
+          "label": "Professional",
+          "cost": 5000
+        },
+        {
+          "label": "Limited",
+          "cost": 2500
+        },
+        {
+          "label": "Starter package",
+          "cost": 8000
+        }
+      ]
+    },
+    {
+      "id": "sb3",
+      "label": "Add-ons",
+      "type": "select",
+      "options": [
+        {
+          "label": "No add-ons",
+          "cost": 0
+        },
+        {
+          "label": "1-3 add-ons",
+          "cost": 8000
+        },
+        {
+          "label": "5+ add-ons",
+          "cost": 20000
+        }
+      ]
+    },
+    {
+      "id": "sb4",
+      "label": "Data Migration",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic",
+          "cost": 5000
+        },
+        {
+          "label": "Complex",
+          "cost": 15000
+        },
+        {
+          "label": "Enterprise migration",
+          "cost": 30000
+        }
+      ]
+    },
+    {
+      "id": "sb5",
+      "label": "Additional",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Custom reports (Crystal)",
+          "cost": 5000
+        },
+        {
+          "label": "Training",
+          "cost": 5000
+        },
+        {
+          "label": "Integrations",
+          "cost": 10000
+        },
+        {
+          "label": "Go-live support",
+          "cost": 5000
+        }
+      ]
+    }
+  ]
+}

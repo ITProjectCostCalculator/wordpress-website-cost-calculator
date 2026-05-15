@@ -1,0 +1,108 @@
+{
+  "id": "custom-pos",
+  "name": "Custom POS Development Cost Calculator",
+  "category": "industry-solutions",
+  "icon": "💳",
+  "description": "Estimate custom Point-of-Sale system development costs.",
+  "inputs": [
+    {
+      "id": "po1",
+      "label": "Store Count",
+      "type": "select",
+      "options": [
+        {
+          "label": "Single store",
+          "cost": 8000
+        },
+        {
+          "label": "2-5 stores",
+          "cost": 15000
+        },
+        {
+          "label": "5-20 stores",
+          "cost": 30000
+        },
+        {
+          "label": "20+ stores",
+          "cost": 50000
+        }
+      ]
+    },
+    {
+      "id": "po2",
+      "label": "Billing Flow",
+      "type": "select",
+      "options": [
+        {
+          "label": "Simple checkout",
+          "cost": 3000
+        },
+        {
+          "label": "Advanced (discounts, tax rules)",
+          "cost": 6000
+        },
+        {
+          "label": "Complex (split payments, holds)",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "po3",
+      "label": "Inventory Sync",
+      "type": "select",
+      "options": [
+        {
+          "label": "Single location",
+          "cost": 2000
+        },
+        {
+          "label": "Multi-location sync",
+          "cost": 5000
+        },
+        {
+          "label": "Real-time omnichannel",
+          "cost": 10000
+        }
+      ]
+    },
+    {
+      "id": "po4",
+      "label": "Hardware",
+      "type": "select",
+      "options": [
+        {
+          "label": "Software only",
+          "cost": 0
+        },
+        {
+          "label": "Barcode + receipt printer",
+          "cost": 2000
+        },
+        {
+          "label": "Full hardware integration",
+          "cost": 5000
+        }
+      ]
+    },
+    {
+      "id": "po5",
+      "label": "Reports",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic reports",
+          "cost": 1000
+        },
+        {
+          "label": "Advanced analytics",
+          "cost": 3000
+        },
+        {
+          "label": "Custom BI dashboard",
+          "cost": 6000
+        }
+      ]
+    }
+  ]
+}

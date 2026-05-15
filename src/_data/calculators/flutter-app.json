@@ -1,0 +1,122 @@
+{
+  "id": "flutter-app",
+  "name": "Flutter App Development Cost Calculator",
+  "category": "mobile-apps",
+  "icon": "🦋",
+  "description": "Calculate Flutter cross-platform app development costs.",
+  "inputs": [
+    {
+      "id": "fl1",
+      "label": "Platforms",
+      "type": "select",
+      "options": [
+        {
+          "label": "Mobile only (iOS + Android)",
+          "cost": 8000
+        },
+        {
+          "label": "Mobile + Web",
+          "cost": 14000
+        },
+        {
+          "label": "Mobile + Web + Desktop",
+          "cost": 22000
+        }
+      ]
+    },
+    {
+      "id": "fl2",
+      "label": "Screen Count",
+      "type": "range",
+      "min": 3,
+      "max": 50,
+      "default": 10,
+      "costPerUnit": 600,
+      "unit": "screens"
+    },
+    {
+      "id": "fl3",
+      "label": "Design Level",
+      "type": "select",
+      "options": [
+        {
+          "label": "Material Design standard",
+          "cost": 2000
+        },
+        {
+          "label": "Custom branded design",
+          "cost": 6000
+        },
+        {
+          "label": "Premium animations",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "fl4",
+      "label": "Backend",
+      "type": "select",
+      "options": [
+        {
+          "label": "Firebase",
+          "cost": 2500
+        },
+        {
+          "label": "Custom backend",
+          "cost": 8000
+        },
+        {
+          "label": "Enterprise backend",
+          "cost": 18000
+        }
+      ]
+    },
+    {
+      "id": "fl5",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "State management (BLoC/Riverpod)",
+          "cost": 1500
+        },
+        {
+          "label": "Push notifications",
+          "cost": 1200
+        },
+        {
+          "label": "Payment integration",
+          "cost": 2500
+        },
+        {
+          "label": "Maps & location",
+          "cost": 2000
+        },
+        {
+          "label": "Real-time chat",
+          "cost": 4000
+        }
+      ]
+    },
+    {
+      "id": "fl6",
+      "label": "Testing",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic testing",
+          "cost": 1000
+        },
+        {
+          "label": "Comprehensive testing",
+          "cost": 3000
+        },
+        {
+          "label": "Full QA automation",
+          "cost": 6000
+        }
+      ]
+    }
+  ]
+}

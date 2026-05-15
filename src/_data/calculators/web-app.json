@@ -1,0 +1,127 @@
+{
+  "id": "web-app",
+  "name": "Web App Development Cost Calculator",
+  "category": "web-apps-saas",
+  "icon": "🖥️",
+  "description": "Estimate custom web application development costs.",
+  "inputs": [
+    {
+      "id": "wa1",
+      "label": "User Roles",
+      "type": "select",
+      "options": [
+        {
+          "label": "Single role",
+          "cost": 2000
+        },
+        {
+          "label": "2-3 roles",
+          "cost": 5000
+        },
+        {
+          "label": "Complex RBAC (5+ roles)",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "wa2",
+      "label": "Dashboard Complexity",
+      "type": "select",
+      "options": [
+        {
+          "label": "Simple dashboard",
+          "cost": 3000
+        },
+        {
+          "label": "Multi-widget dashboard",
+          "cost": 8000
+        },
+        {
+          "label": "Real-time analytics dashboard",
+          "cost": 18000
+        }
+      ]
+    },
+    {
+      "id": "wa3",
+      "label": "Admin Panel",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic admin",
+          "cost": 3000
+        },
+        {
+          "label": "Full-featured admin",
+          "cost": 8000
+        },
+        {
+          "label": "Enterprise admin suite",
+          "cost": 15000
+        }
+      ]
+    },
+    {
+      "id": "wa4",
+      "label": "API & Database",
+      "type": "select",
+      "options": [
+        {
+          "label": "Simple REST + SQL",
+          "cost": 5000
+        },
+        {
+          "label": "Complex API + NoSQL",
+          "cost": 12000
+        },
+        {
+          "label": "Microservices architecture",
+          "cost": 30000
+        }
+      ]
+    },
+    {
+      "id": "wa5",
+      "label": "Authentication",
+      "type": "select",
+      "options": [
+        {
+          "label": "Email/password",
+          "cost": 1000
+        },
+        {
+          "label": "Social + SSO",
+          "cost": 3000
+        },
+        {
+          "label": "Enterprise SSO (SAML/OIDC)",
+          "cost": 6000
+        }
+      ]
+    },
+    {
+      "id": "wa6",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Reporting & export",
+          "cost": 3000
+        },
+        {
+          "label": "Real-time notifications",
+          "cost": 2000
+        },
+        {
+          "label": "File management",
+          "cost": 2500
+        },
+        {
+          "label": "Audit logging",
+          "cost": 1500
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "id": "power-bi-dashboard",
+  "name": "Power BI Dashboard Cost Calculator",
+  "category": "ai-data",
+  "icon": "📉",
+  "description": "Estimate Power BI dashboard development costs.",
+  "inputs": [
+    {
+      "id": "pb1",
+      "label": "Data Connectors",
+      "type": "select",
+      "options": [
+        {
+          "label": "1-2 connectors",
+          "cost": 1000
+        },
+        {
+          "label": "3-5 connectors",
+          "cost": 3000
+        },
+        {
+          "label": "6+ connectors",
+          "cost": 6000
+        }
+      ]
+    },
+    {
+      "id": "pb2",
+      "label": "Report Pages",
+      "type": "range",
+      "min": 1,
+      "max": 20,
+      "default": 3,
+      "costPerUnit": 800,
+      "unit": "pages"
+    },
+    {
+      "id": "pb3",
+      "label": "DAX Complexity",
+      "type": "select",
+      "options": [
+        {
+          "label": "Simple measures",
+          "cost": 1000
+        },
+        {
+          "label": "Moderate DAX",
+          "cost": 3000
+        },
+        {
+          "label": "Complex DAX + calculated tables",
+          "cost": 7000
+        }
+      ]
+    },
+    {
+      "id": "pb4",
+      "label": "Row-Level Security",
+      "type": "select",
+      "options": [
+        {
+          "label": "No RLS",
+          "cost": 0
+        },
+        {
+          "label": "Basic RLS",
+          "cost": 1000
+        },
+        {
+          "label": "Dynamic RLS",
+          "cost": 3000
+        }
+      ]
+    },
+    {
+      "id": "pb5",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Scheduled refresh setup",
+          "cost": 500
+        },
+        {
+          "label": "Paginated reports",
+          "cost": 1500
+        },
+        {
+          "label": "Embedded analytics",
+          "cost": 3000
+        },
+        {
+          "label": "Mobile layout",
+          "cost": 1000
+        },
+        {
+          "label": "Gateway setup",
+          "cost": 1500
+        }
+      ]
+    }
+  ]
+}

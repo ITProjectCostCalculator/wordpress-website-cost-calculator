@@ -1,0 +1,97 @@
+{
+  "id": "food-delivery-app",
+  "name": "Food Delivery App Cost Calculator",
+  "category": "industry-solutions",
+  "icon": "🍕",
+  "description": "Calculate food delivery platform development costs.",
+  "inputs": [
+    {
+      "id": "fd1",
+      "label": "Apps",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Customer app",
+          "cost": 15000
+        },
+        {
+          "label": "Delivery driver app",
+          "cost": 10000
+        },
+        {
+          "label": "Restaurant panel",
+          "cost": 8000
+        },
+        {
+          "label": "Admin panel",
+          "cost": 6000
+        }
+      ]
+    },
+    {
+      "id": "fd2",
+      "label": "Map & Tracking",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic maps",
+          "cost": 3000
+        },
+        {
+          "label": "Real-time tracking",
+          "cost": 6000
+        },
+        {
+          "label": "Route optimization",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "fd3",
+      "label": "Payment",
+      "type": "select",
+      "options": [
+        {
+          "label": "Single gateway",
+          "cost": 2000
+        },
+        {
+          "label": "Multiple gateways + wallet",
+          "cost": 5000
+        },
+        {
+          "label": "Advanced (split, tips, refunds)",
+          "cost": 10000
+        }
+      ]
+    },
+    {
+      "id": "fd4",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Push notifications",
+          "cost": 1500
+        },
+        {
+          "label": "Reviews & ratings",
+          "cost": 2000
+        },
+        {
+          "label": "Promo codes/offers",
+          "cost": 2000
+        },
+        {
+          "label": "Chat support",
+          "cost": 3000
+        },
+        {
+          "label": "Order scheduling",
+          "cost": 2000
+        }
+      ]
+    }
+  ]
+}

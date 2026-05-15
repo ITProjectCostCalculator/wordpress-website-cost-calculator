@@ -1,0 +1,108 @@
+{
+  "id": "android-app",
+  "name": "Android App Development Cost Calculator",
+  "category": "mobile-apps",
+  "icon": "🤖",
+  "description": "Estimate Android app development costs with Kotlin and device support.",
+  "inputs": [
+    {
+      "id": "an1",
+      "label": "Device Support",
+      "type": "select",
+      "options": [
+        {
+          "label": "Phones only",
+          "cost": 5000
+        },
+        {
+          "label": "Phones + Tablets",
+          "cost": 8000
+        },
+        {
+          "label": "All Android devices",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "an2",
+      "label": "App Complexity",
+      "type": "select",
+      "options": [
+        {
+          "label": "Simple (5-10 screens)",
+          "cost": 5000
+        },
+        {
+          "label": "Medium (10-25 screens)",
+          "cost": 14000
+        },
+        {
+          "label": "Complex (25+ screens)",
+          "cost": 30000
+        }
+      ]
+    },
+    {
+      "id": "an3",
+      "label": "Backend & API",
+      "type": "select",
+      "options": [
+        {
+          "label": "Firebase",
+          "cost": 2500
+        },
+        {
+          "label": "Custom API",
+          "cost": 8000
+        },
+        {
+          "label": "Enterprise backend",
+          "cost": 18000
+        }
+      ]
+    },
+    {
+      "id": "an4",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Google Sign-In",
+          "cost": 800
+        },
+        {
+          "label": "Offline mode",
+          "cost": 3000
+        },
+        {
+          "label": "Push notifications (FCM)",
+          "cost": 1000
+        },
+        {
+          "label": "Payment gateway",
+          "cost": 2500
+        },
+        {
+          "label": "Maps integration",
+          "cost": 2000
+        }
+      ]
+    },
+    {
+      "id": "an5",
+      "label": "Timeline",
+      "type": "select",
+      "options": [
+        {
+          "label": "Standard (14-20 weeks)",
+          "cost": 0
+        },
+        {
+          "label": "Accelerated (8-12 weeks)",
+          "cost": 8000
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "id": "aws-development",
+  "name": "AWS Development Cost Calculator",
+  "category": "cloud-devops",
+  "icon": "🔶",
+  "description": "Calculate AWS infrastructure setup and development costs.",
+  "inputs": [
+    {
+      "id": "aw1",
+      "label": "Compute",
+      "type": "select",
+      "options": [
+        {
+          "label": "Simple EC2/Lambda",
+          "cost": 3000
+        },
+        {
+          "label": "Auto-scaling + containers",
+          "cost": 8000
+        },
+        {
+          "label": "EKS/ECS cluster",
+          "cost": 18000
+        }
+      ]
+    },
+    {
+      "id": "aw2",
+      "label": "Storage",
+      "type": "select",
+      "options": [
+        {
+          "label": "S3 only",
+          "cost": 1000
+        },
+        {
+          "label": "S3 + EBS + EFS",
+          "cost": 3000
+        },
+        {
+          "label": "Complex storage architecture",
+          "cost": 6000
+        }
+      ]
+    },
+    {
+      "id": "aw3",
+      "label": "Database",
+      "type": "select",
+      "options": [
+        {
+          "label": "RDS single instance",
+          "cost": 2000
+        },
+        {
+          "label": "RDS multi-AZ",
+          "cost": 4000
+        },
+        {
+          "label": "DynamoDB + Aurora",
+          "cost": 8000
+        }
+      ]
+    },
+    {
+      "id": "aw4",
+      "label": "CDN & Networking",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic VPC",
+          "cost": 1000
+        },
+        {
+          "label": "CloudFront + VPC",
+          "cost": 3000
+        },
+        {
+          "label": "Multi-region network",
+          "cost": 8000
+        }
+      ]
+    },
+    {
+      "id": "aw5",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Monitoring (CloudWatch)",
+          "cost": 1500
+        },
+        {
+          "label": "Backup automation",
+          "cost": 1000
+        },
+        {
+          "label": "CI/CD pipeline",
+          "cost": 3000
+        },
+        {
+          "label": "Security (WAF, GuardDuty)",
+          "cost": 2500
+        },
+        {
+          "label": "IaC (Terraform/CDK)",
+          "cost": 3000
+        }
+      ]
+    }
+  ]
+}

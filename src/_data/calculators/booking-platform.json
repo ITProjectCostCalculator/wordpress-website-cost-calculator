@@ -1,0 +1,108 @@
+{
+  "id": "booking-platform",
+  "name": "Booking Platform Cost Calculator",
+  "category": "web-apps-saas",
+  "icon": "📅",
+  "description": "Calculate booking and reservation platform development costs.",
+  "inputs": [
+    {
+      "id": "bk1",
+      "label": "Calendar & Scheduling",
+      "type": "select",
+      "options": [
+        {
+          "label": "Simple date picker",
+          "cost": 3000
+        },
+        {
+          "label": "Advanced calendar with slots",
+          "cost": 8000
+        },
+        {
+          "label": "Multi-resource scheduling",
+          "cost": 15000
+        }
+      ]
+    },
+    {
+      "id": "bk2",
+      "label": "Payment Processing",
+      "type": "select",
+      "options": [
+        {
+          "label": "Simple checkout",
+          "cost": 2000
+        },
+        {
+          "label": "Deposits + full payment",
+          "cost": 4000
+        },
+        {
+          "label": "Complex pricing rules",
+          "cost": 8000
+        }
+      ]
+    },
+    {
+      "id": "bk3",
+      "label": "User Roles",
+      "type": "select",
+      "options": [
+        {
+          "label": "Customer + Provider",
+          "cost": 3000
+        },
+        {
+          "label": "Multi-role + teams",
+          "cost": 7000
+        },
+        {
+          "label": "Enterprise hierarchy",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "bk4",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Reminders (email/SMS)",
+          "cost": 1500
+        },
+        {
+          "label": "Cancellation rules",
+          "cost": 1000
+        },
+        {
+          "label": "Waitlist management",
+          "cost": 2000
+        },
+        {
+          "label": "Review system",
+          "cost": 1500
+        },
+        {
+          "label": "Calendar integrations",
+          "cost": 2000
+        }
+      ]
+    },
+    {
+      "id": "bk5",
+      "label": "Admin Panel",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic admin",
+          "cost": 2000
+        },
+        {
+          "label": "Full admin dashboard",
+          "cost": 6000
+        }
+      ]
+    }
+  ]
+}

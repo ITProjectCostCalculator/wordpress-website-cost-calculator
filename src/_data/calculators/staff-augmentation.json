@@ -1,0 +1,112 @@
+{
+  "id": "staff-augmentation",
+  "name": "Staff Augmentation Cost Calculator",
+  "category": "cloud-devops",
+  "icon": "🧑‍💻",
+  "description": "Estimate staff augmentation and resource hiring costs.",
+  "inputs": [
+    {
+      "id": "st1",
+      "label": "Developer Type",
+      "type": "select",
+      "options": [
+        {
+          "label": "Frontend developer",
+          "cost": 3000
+        },
+        {
+          "label": "Backend developer",
+          "cost": 3500
+        },
+        {
+          "label": "Full-stack developer",
+          "cost": 4000
+        },
+        {
+          "label": "Mobile developer",
+          "cost": 4000
+        },
+        {
+          "label": "DevOps engineer",
+          "cost": 4500
+        }
+      ]
+    },
+    {
+      "id": "st2",
+      "label": "Experience Level",
+      "type": "select",
+      "options": [
+        {
+          "label": "Junior (1-3 years)",
+          "cost": 0
+        },
+        {
+          "label": "Mid (3-5 years)",
+          "cost": 2000
+        },
+        {
+          "label": "Senior (5-8 years)",
+          "cost": 4000
+        },
+        {
+          "label": "Lead/Architect (8+)",
+          "cost": 7000
+        }
+      ]
+    },
+    {
+      "id": "st3",
+      "label": "Hours per Week",
+      "type": "select",
+      "options": [
+        {
+          "label": "20 hours/week",
+          "cost": 0
+        },
+        {
+          "label": "40 hours/week",
+          "cost": 3000
+        }
+      ]
+    },
+    {
+      "id": "st4",
+      "label": "Duration",
+      "type": "select",
+      "options": [
+        {
+          "label": "1-3 months",
+          "cost": 1000
+        },
+        {
+          "label": "3-6 months",
+          "cost": 0
+        },
+        {
+          "label": "6-12 months (discount)",
+          "cost": -1000
+        }
+      ]
+    },
+    {
+      "id": "st5",
+      "label": "Timezone Overlap",
+      "type": "select",
+      "options": [
+        {
+          "label": "4+ hours overlap",
+          "cost": 0
+        },
+        {
+          "label": "Full US business hours",
+          "cost": 2000
+        },
+        {
+          "label": "24/7 coverage",
+          "cost": 5000
+        }
+      ]
+    }
+  ]
+}

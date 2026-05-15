@@ -1,0 +1,101 @@
+{
+  "id": "speed-optimization",
+  "name": "Website Speed Optimization Cost Calculator",
+  "category": "industry-solutions",
+  "icon": "⚡",
+  "description": "Calculate website performance optimization costs.",
+  "inputs": [
+    {
+      "id": "so1",
+      "label": "Platform",
+      "type": "select",
+      "options": [
+        {
+          "label": "WordPress",
+          "cost": 1000
+        },
+        {
+          "label": "Shopify",
+          "cost": 1000
+        },
+        {
+          "label": "Custom/Other",
+          "cost": 1500
+        },
+        {
+          "label": "React/Next.js",
+          "cost": 1500
+        }
+      ]
+    },
+    {
+      "id": "so2",
+      "label": "Page Templates",
+      "type": "select",
+      "options": [
+        {
+          "label": "1-3 templates",
+          "cost": 500
+        },
+        {
+          "label": "4-8 templates",
+          "cost": 1200
+        },
+        {
+          "label": "8+ templates",
+          "cost": 2500
+        }
+      ]
+    },
+    {
+      "id": "so3",
+      "label": "Core Web Vitals Issues",
+      "type": "select",
+      "options": [
+        {
+          "label": "Minor issues",
+          "cost": 500
+        },
+        {
+          "label": "Moderate issues",
+          "cost": 1500
+        },
+        {
+          "label": "Major issues",
+          "cost": 3000
+        }
+      ]
+    },
+    {
+      "id": "so4",
+      "label": "Optimizations",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Image optimization",
+          "cost": 500
+        },
+        {
+          "label": "Script optimization",
+          "cost": 800
+        },
+        {
+          "label": "CSS optimization",
+          "cost": 500
+        },
+        {
+          "label": "Server/CDN setup",
+          "cost": 1000
+        },
+        {
+          "label": "Lazy loading",
+          "cost": 400
+        },
+        {
+          "label": "Caching setup",
+          "cost": 600
+        }
+      ]
+    }
+  ]
+}

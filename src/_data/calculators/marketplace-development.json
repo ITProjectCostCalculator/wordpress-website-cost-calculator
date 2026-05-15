@@ -1,0 +1,112 @@
+{
+  "id": "marketplace-development",
+  "name": "Marketplace Development Cost Calculator",
+  "category": "web-apps-saas",
+  "icon": "🏪",
+  "description": "Estimate online marketplace platform development costs.",
+  "inputs": [
+    {
+      "id": "mk1",
+      "label": "Marketplace Type",
+      "type": "select",
+      "options": [
+        {
+          "label": "Simple listing marketplace",
+          "cost": 15000
+        },
+        {
+          "label": "Transaction marketplace",
+          "cost": 30000
+        },
+        {
+          "label": "Full service marketplace",
+          "cost": 60000
+        }
+      ]
+    },
+    {
+      "id": "mk2",
+      "label": "User Roles",
+      "type": "select",
+      "options": [
+        {
+          "label": "Buyer + Seller",
+          "cost": 5000
+        },
+        {
+          "label": "Buyer + Seller + Admin",
+          "cost": 8000
+        },
+        {
+          "label": "Multi-role with sub-accounts",
+          "cost": 15000
+        }
+      ]
+    },
+    {
+      "id": "mk3",
+      "label": "Commission & Payments",
+      "type": "select",
+      "options": [
+        {
+          "label": "Simple fixed commission",
+          "cost": 3000
+        },
+        {
+          "label": "Tiered commission + escrow",
+          "cost": 8000
+        },
+        {
+          "label": "Complex split payments",
+          "cost": 15000
+        }
+      ]
+    },
+    {
+      "id": "mk4",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Ratings & reviews",
+          "cost": 3000
+        },
+        {
+          "label": "Dispute resolution system",
+          "cost": 5000
+        },
+        {
+          "label": "Moderation tools",
+          "cost": 3000
+        },
+        {
+          "label": "Search & filters",
+          "cost": 4000
+        },
+        {
+          "label": "Chat/messaging",
+          "cost": 5000
+        }
+      ]
+    },
+    {
+      "id": "mk5",
+      "label": "Admin Panel",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic admin",
+          "cost": 3000
+        },
+        {
+          "label": "Full admin suite",
+          "cost": 8000
+        },
+        {
+          "label": "Enterprise admin + analytics",
+          "cost": 15000
+        }
+      ]
+    }
+  ]
+}

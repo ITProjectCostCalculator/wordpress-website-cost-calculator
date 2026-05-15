@@ -1,0 +1,112 @@
+{
+  "id": "ai-integration",
+  "name": "AI Integration Cost Calculator",
+  "category": "ai-data",
+  "icon": "🔗",
+  "description": "Calculate AI feature integration costs into existing systems.",
+  "inputs": [
+    {
+      "id": "aii1",
+      "label": "Current System",
+      "type": "select",
+      "options": [
+        {
+          "label": "Web application",
+          "cost": 3000
+        },
+        {
+          "label": "Mobile application",
+          "cost": 5000
+        },
+        {
+          "label": "Enterprise software",
+          "cost": 10000
+        }
+      ]
+    },
+    {
+      "id": "aii2",
+      "label": "AI Feature Type",
+      "type": "select",
+      "options": [
+        {
+          "label": "Text generation",
+          "cost": 5000
+        },
+        {
+          "label": "Image recognition",
+          "cost": 8000
+        },
+        {
+          "label": "Search / recommendations",
+          "cost": 10000
+        },
+        {
+          "label": "Process automation",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "aii3",
+      "label": "API Integration",
+      "type": "select",
+      "options": [
+        {
+          "label": "Single AI API",
+          "cost": 2000
+        },
+        {
+          "label": "Multiple AI APIs",
+          "cost": 5000
+        },
+        {
+          "label": "Custom model + API",
+          "cost": 15000
+        }
+      ]
+    },
+    {
+      "id": "aii4",
+      "label": "Data Quality Work",
+      "type": "select",
+      "options": [
+        {
+          "label": "Data ready",
+          "cost": 0
+        },
+        {
+          "label": "Minor cleanup",
+          "cost": 3000
+        },
+        {
+          "label": "Major data preparation",
+          "cost": 8000
+        }
+      ]
+    },
+    {
+      "id": "aii5",
+      "label": "Additional",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Security review",
+          "cost": 2000
+        },
+        {
+          "label": "Load testing",
+          "cost": 1500
+        },
+        {
+          "label": "A/B testing setup",
+          "cost": 2000
+        },
+        {
+          "label": "Documentation",
+          "cost": 1000
+        }
+      ]
+    }
+  ]
+}

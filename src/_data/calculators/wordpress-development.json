@@ -1,0 +1,118 @@
+{
+  "id": "wordpress-development",
+  "name": "WordPress Development Cost Calculator",
+  "category": "web-development",
+  "icon": "📝",
+  "description": "Calculate WordPress site development costs including themes, plugins and customization.",
+  "inputs": [
+    {
+      "id": "wp1",
+      "label": "Theme Type",
+      "type": "select",
+      "options": [
+        {
+          "label": "Free/Premium Theme",
+          "cost": 500
+        },
+        {
+          "label": "Customized Premium Theme",
+          "cost": 2500
+        },
+        {
+          "label": "Fully Custom Theme",
+          "cost": 8000
+        }
+      ]
+    },
+    {
+      "id": "wp2",
+      "label": "Page Count",
+      "type": "range",
+      "min": 1,
+      "max": 50,
+      "default": 5,
+      "costPerUnit": 150,
+      "unit": "pages"
+    },
+    {
+      "id": "wp3",
+      "label": "Plugin Requirements",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic (5-10 plugins)",
+          "cost": 500
+        },
+        {
+          "label": "Moderate (10-20 plugins)",
+          "cost": 1500
+        },
+        {
+          "label": "Complex (20+ custom plugins)",
+          "cost": 4000
+        }
+      ]
+    },
+    {
+      "id": "wp4",
+      "label": "WooCommerce / eCommerce",
+      "type": "select",
+      "options": [
+        {
+          "label": "Not needed",
+          "cost": 0
+        },
+        {
+          "label": "Basic store (under 50 products)",
+          "cost": 2000
+        },
+        {
+          "label": "Advanced store (50+ products)",
+          "cost": 5000
+        }
+      ]
+    },
+    {
+      "id": "wp5",
+      "label": "Additional Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Custom Fields (ACF)",
+          "cost": 800
+        },
+        {
+          "label": "Speed Optimization",
+          "cost": 1000
+        },
+        {
+          "label": "Security Hardening",
+          "cost": 600
+        },
+        {
+          "label": "SEO Setup",
+          "cost": 800
+        },
+        {
+          "label": "Multilingual (WPML)",
+          "cost": 1500
+        }
+      ]
+    },
+    {
+      "id": "wp6",
+      "label": "Timeline",
+      "type": "select",
+      "options": [
+        {
+          "label": "Standard (6-10 weeks)",
+          "cost": 0
+        },
+        {
+          "label": "Rush (3-4 weeks)",
+          "cost": 3000
+        }
+      ]
+    }
+  ]
+}

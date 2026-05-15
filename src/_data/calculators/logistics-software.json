@@ -1,0 +1,101 @@
+{
+  "id": "logistics-software",
+  "name": "Logistics Software Development Cost Calculator",
+  "category": "industry-solutions",
+  "icon": "🚛",
+  "description": "Calculate logistics and fleet management software costs.",
+  "inputs": [
+    {
+      "id": "lg1",
+      "label": "Fleet Size",
+      "type": "select",
+      "options": [
+        {
+          "label": "1-10 vehicles",
+          "cost": 10000
+        },
+        {
+          "label": "11-50 vehicles",
+          "cost": 20000
+        },
+        {
+          "label": "50-200 vehicles",
+          "cost": 40000
+        },
+        {
+          "label": "200+ vehicles",
+          "cost": 70000
+        }
+      ]
+    },
+    {
+      "id": "lg2",
+      "label": "Route Planning",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic routes",
+          "cost": 3000
+        },
+        {
+          "label": "Optimized routing",
+          "cost": 8000
+        },
+        {
+          "label": "AI-powered route optimization",
+          "cost": 18000
+        }
+      ]
+    },
+    {
+      "id": "lg3",
+      "label": "Tracking",
+      "type": "select",
+      "options": [
+        {
+          "label": "Manual updates",
+          "cost": 1000
+        },
+        {
+          "label": "GPS tracking",
+          "cost": 5000
+        },
+        {
+          "label": "Real-time IoT tracking",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "lg4",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Driver mobile app",
+          "cost": 6000
+        },
+        {
+          "label": "Admin dashboard",
+          "cost": 5000
+        },
+        {
+          "label": "Customer portal",
+          "cost": 4000
+        },
+        {
+          "label": "Reporting/analytics",
+          "cost": 3000
+        },
+        {
+          "label": "ERP integration",
+          "cost": 5000
+        },
+        {
+          "label": "Document management",
+          "cost": 2000
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "id": "app-redesign",
+  "name": "App Redesign Cost Calculator",
+  "category": "mobile-apps",
+  "icon": "🎨",
+  "description": "Calculate the cost of redesigning an existing mobile application.",
+  "inputs": [
+    {
+      "id": "ar1",
+      "label": "Screen Count",
+      "type": "range",
+      "min": 3,
+      "max": 60,
+      "default": 10,
+      "costPerUnit": 500,
+      "unit": "screens"
+    },
+    {
+      "id": "ar2",
+      "label": "UX Audit",
+      "type": "select",
+      "options": [
+        {
+          "label": "No audit",
+          "cost": 0
+        },
+        {
+          "label": "Basic UX review",
+          "cost": 2000
+        },
+        {
+          "label": "Comprehensive UX audit",
+          "cost": 5000
+        }
+      ]
+    },
+    {
+      "id": "ar3",
+      "label": "Design System",
+      "type": "select",
+      "options": [
+        {
+          "label": "Adapt existing system",
+          "cost": 1500
+        },
+        {
+          "label": "New design system",
+          "cost": 5000
+        },
+        {
+          "label": "Premium design system + guidelines",
+          "cost": 10000
+        }
+      ]
+    },
+    {
+      "id": "ar4",
+      "label": "Frontend Implementation",
+      "type": "select",
+      "options": [
+        {
+          "label": "Design only (no code)",
+          "cost": 0
+        },
+        {
+          "label": "Implement new designs",
+          "cost": 8000
+        },
+        {
+          "label": "Full rebuild with new designs",
+          "cost": 20000
+        }
+      ]
+    },
+    {
+      "id": "ar5",
+      "label": "Usability Testing",
+      "type": "select",
+      "options": [
+        {
+          "label": "No testing",
+          "cost": 0
+        },
+        {
+          "label": "Basic user testing",
+          "cost": 1500
+        },
+        {
+          "label": "Professional usability study",
+          "cost": 4000
+        }
+      ]
+    },
+    {
+      "id": "ar6",
+      "label": "Platforms",
+      "type": "select",
+      "options": [
+        {
+          "label": "Single platform",
+          "cost": 0
+        },
+        {
+          "label": "Both iOS + Android",
+          "cost": 5000
+        }
+      ]
+    }
+  ]
+}

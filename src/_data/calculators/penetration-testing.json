@@ -1,0 +1,89 @@
+{
+  "id": "penetration-testing",
+  "name": "Penetration Testing Cost Calculator",
+  "category": "industry-solutions",
+  "icon": "🛡️",
+  "description": "Calculate penetration testing engagement costs.",
+  "inputs": [
+    {
+      "id": "pt1",
+      "label": "Scope",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Web application",
+          "cost": 5000
+        },
+        {
+          "label": "Mobile application",
+          "cost": 5000
+        },
+        {
+          "label": "API testing",
+          "cost": 4000
+        },
+        {
+          "label": "Cloud infrastructure",
+          "cost": 6000
+        },
+        {
+          "label": "Network testing",
+          "cost": 5000
+        }
+      ]
+    },
+    {
+      "id": "pt2",
+      "label": "Test Depth",
+      "type": "select",
+      "options": [
+        {
+          "label": "Automated scan + review",
+          "cost": 2000
+        },
+        {
+          "label": "Manual testing",
+          "cost": 6000
+        },
+        {
+          "label": "Advanced (red team)",
+          "cost": 15000
+        }
+      ]
+    },
+    {
+      "id": "pt3",
+      "label": "Retest",
+      "type": "select",
+      "options": [
+        {
+          "label": "No retest",
+          "cost": 0
+        },
+        {
+          "label": "Single retest",
+          "cost": 2000
+        },
+        {
+          "label": "Quarterly retesting",
+          "cost": 6000
+        }
+      ]
+    },
+    {
+      "id": "pt4",
+      "label": "Report",
+      "type": "select",
+      "options": [
+        {
+          "label": "Standard report",
+          "cost": 0
+        },
+        {
+          "label": "Detailed + remediation guide",
+          "cost": 2000
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "id": "dynamics-365",
+  "name": "Microsoft Dynamics 365 Implementation Cost Calculator",
+  "category": "erp-systems",
+  "icon": "🟦",
+  "description": "Calculate Microsoft Dynamics 365 implementation costs.",
+  "inputs": [
+    {
+      "id": "dy1",
+      "label": "Modules",
+      "type": "select",
+      "options": [
+        {
+          "label": "Sales only",
+          "cost": 15000
+        },
+        {
+          "label": "Sales + Service",
+          "cost": 30000
+        },
+        {
+          "label": "Full ERP suite",
+          "cost": 60000
+        },
+        {
+          "label": "Enterprise (all modules)",
+          "cost": 120000
+        }
+      ]
+    },
+    {
+      "id": "dy2",
+      "label": "User Count",
+      "type": "select",
+      "options": [
+        {
+          "label": "1-10 users",
+          "cost": 5000
+        },
+        {
+          "label": "11-50 users",
+          "cost": 15000
+        },
+        {
+          "label": "50-200 users",
+          "cost": 35000
+        },
+        {
+          "label": "200+ users",
+          "cost": 60000
+        }
+      ]
+    },
+    {
+      "id": "dy3",
+      "label": "Integrations",
+      "type": "select",
+      "options": [
+        {
+          "label": "Office 365 only",
+          "cost": 2000
+        },
+        {
+          "label": "Multiple systems",
+          "cost": 10000
+        },
+        {
+          "label": "Complex enterprise integration",
+          "cost": 25000
+        }
+      ]
+    },
+    {
+      "id": "dy4",
+      "label": "Data Migration",
+      "type": "select",
+      "options": [
+        {
+          "label": "Simple",
+          "cost": 5000
+        },
+        {
+          "label": "Complex",
+          "cost": 15000
+        },
+        {
+          "label": "Legacy system migration",
+          "cost": 30000
+        }
+      ]
+    },
+    {
+      "id": "dy5",
+      "label": "Additional",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Custom workflows",
+          "cost": 5000
+        },
+        {
+          "label": "Training program",
+          "cost": 5000
+        },
+        {
+          "label": "Power BI integration",
+          "cost": 3000
+        },
+        {
+          "label": "Support plan",
+          "cost": 8000
+        }
+      ]
+    }
+  ]
+}

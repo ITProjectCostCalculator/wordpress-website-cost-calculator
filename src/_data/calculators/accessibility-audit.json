@@ -1,0 +1,112 @@
+{
+  "id": "accessibility-audit",
+  "name": "Accessibility Audit Cost Calculator",
+  "category": "industry-solutions",
+  "icon": "♿",
+  "description": "Estimate website accessibility audit and remediation costs.",
+  "inputs": [
+    {
+      "id": "ac1",
+      "label": "Page Count",
+      "type": "select",
+      "options": [
+        {
+          "label": "Under 20 pages",
+          "cost": 1500
+        },
+        {
+          "label": "20-50 pages",
+          "cost": 3000
+        },
+        {
+          "label": "50-100 pages",
+          "cost": 5000
+        },
+        {
+          "label": "100+ pages",
+          "cost": 8000
+        }
+      ]
+    },
+    {
+      "id": "ac2",
+      "label": "WCAG Level",
+      "type": "select",
+      "options": [
+        {
+          "label": "Level A",
+          "cost": 1000
+        },
+        {
+          "label": "Level AA",
+          "cost": 2500
+        },
+        {
+          "label": "Level AAA",
+          "cost": 5000
+        }
+      ]
+    },
+    {
+      "id": "ac3",
+      "label": "Testing Type",
+      "type": "select",
+      "options": [
+        {
+          "label": "Automated only",
+          "cost": 500
+        },
+        {
+          "label": "Automated + manual",
+          "cost": 2000
+        },
+        {
+          "label": "Full assistive tech testing",
+          "cost": 5000
+        }
+      ]
+    },
+    {
+      "id": "ac4",
+      "label": "Remediation",
+      "type": "select",
+      "options": [
+        {
+          "label": "Audit only",
+          "cost": 0
+        },
+        {
+          "label": "Audit + fixes",
+          "cost": 3000
+        },
+        {
+          "label": "Full remediation",
+          "cost": 8000
+        }
+      ]
+    },
+    {
+      "id": "ac5",
+      "label": "Additional",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "PDF accessibility",
+          "cost": 1500
+        },
+        {
+          "label": "Staff training",
+          "cost": 1000
+        },
+        {
+          "label": "Ongoing monitoring",
+          "cost": 2000
+        },
+        {
+          "label": "Accessibility statement",
+          "cost": 300
+        }
+      ]
+    }
+  ]
+}

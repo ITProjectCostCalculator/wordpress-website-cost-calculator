@@ -1,0 +1,112 @@
+{
+  "id": "devops-setup",
+  "name": "DevOps Setup Cost Calculator",
+  "category": "cloud-devops",
+  "icon": "🔧",
+  "description": "Estimate DevOps infrastructure and pipeline setup costs.",
+  "inputs": [
+    {
+      "id": "do1",
+      "label": "CI/CD Pipeline",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic pipeline",
+          "cost": 3000
+        },
+        {
+          "label": "Multi-stage pipeline",
+          "cost": 6000
+        },
+        {
+          "label": "Advanced (blue-green, canary)",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "do2",
+      "label": "Cloud Provider",
+      "type": "select",
+      "options": [
+        {
+          "label": "Single cloud",
+          "cost": 2000
+        },
+        {
+          "label": "Multi-cloud",
+          "cost": 5000
+        },
+        {
+          "label": "Hybrid (cloud + on-prem)",
+          "cost": 10000
+        }
+      ]
+    },
+    {
+      "id": "do3",
+      "label": "Environments",
+      "type": "select",
+      "options": [
+        {
+          "label": "Dev + Production",
+          "cost": 2000
+        },
+        {
+          "label": "Dev + Staging + Production",
+          "cost": 4000
+        },
+        {
+          "label": "Multiple environments + feature envs",
+          "cost": 8000
+        }
+      ]
+    },
+    {
+      "id": "do4",
+      "label": "Monitoring",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic (logs + metrics)",
+          "cost": 1500
+        },
+        {
+          "label": "Full observability stack",
+          "cost": 5000
+        },
+        {
+          "label": "Enterprise APM",
+          "cost": 10000
+        }
+      ]
+    },
+    {
+      "id": "do5",
+      "label": "Additional",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Container orchestration",
+          "cost": 4000
+        },
+        {
+          "label": "Security scanning",
+          "cost": 2000
+        },
+        {
+          "label": "Automated testing",
+          "cost": 3000
+        },
+        {
+          "label": "IaC setup",
+          "cost": 3000
+        },
+        {
+          "label": "Documentation",
+          "cost": 1000
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "id": "shopify-b2b",
+  "name": "Shopify B2B Cost Calculator",
+  "category": "ecommerce",
+  "icon": "🤝",
+  "description": "Estimate Shopify B2B store development costs.",
+  "inputs": [
+    {
+      "id": "sb2b1",
+      "label": "Company Accounts",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic company profiles",
+          "cost": 3000
+        },
+        {
+          "label": "Advanced with locations",
+          "cost": 6000
+        },
+        {
+          "label": "Enterprise accounts",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "sb2b2",
+      "label": "Price Lists",
+      "type": "select",
+      "options": [
+        {
+          "label": "Single price list",
+          "cost": 1000
+        },
+        {
+          "label": "Multiple price lists",
+          "cost": 3000
+        },
+        {
+          "label": "Dynamic pricing engine",
+          "cost": 8000
+        }
+      ]
+    },
+    {
+      "id": "sb2b3",
+      "label": "Catalogs",
+      "type": "select",
+      "options": [
+        {
+          "label": "Single catalog",
+          "cost": 500
+        },
+        {
+          "label": "Per-company catalogs",
+          "cost": 3000
+        },
+        {
+          "label": "Complex catalog rules",
+          "cost": 6000
+        }
+      ]
+    },
+    {
+      "id": "sb2b4",
+      "label": "Payment Terms",
+      "type": "select",
+      "options": [
+        {
+          "label": "Pay now only",
+          "cost": 0
+        },
+        {
+          "label": "Net terms",
+          "cost": 2000
+        },
+        {
+          "label": "Complex payment terms",
+          "cost": 5000
+        }
+      ]
+    },
+    {
+      "id": "sb2b5",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Approval workflows",
+          "cost": 3000
+        },
+        {
+          "label": "ERP integration",
+          "cost": 8000
+        },
+        {
+          "label": "Quick order forms",
+          "cost": 2000
+        },
+        {
+          "label": "Custom portal",
+          "cost": 5000
+        }
+      ]
+    }
+  ]
+}

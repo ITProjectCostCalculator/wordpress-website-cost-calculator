@@ -1,0 +1,95 @@
+{
+  "id": "server-maintenance",
+  "name": "Server Maintenance Cost Calculator",
+  "category": "cloud-devops",
+  "icon": "🖥️",
+  "description": "Calculate ongoing server maintenance and management costs.",
+  "inputs": [
+    {
+      "id": "sv1",
+      "label": "Server Count",
+      "type": "range",
+      "min": 1,
+      "max": 50,
+      "default": 2,
+      "costPerUnit": 200,
+      "unit": "servers"
+    },
+    {
+      "id": "sv2",
+      "label": "Monitoring",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic uptime monitoring",
+          "cost": 100
+        },
+        {
+          "label": "Performance monitoring",
+          "cost": 300
+        },
+        {
+          "label": "Full infrastructure monitoring",
+          "cost": 800
+        }
+      ]
+    },
+    {
+      "id": "sv3",
+      "label": "Backups",
+      "type": "select",
+      "options": [
+        {
+          "label": "Weekly backups",
+          "cost": 100
+        },
+        {
+          "label": "Daily backups",
+          "cost": 200
+        },
+        {
+          "label": "Continuous backups",
+          "cost": 500
+        }
+      ]
+    },
+    {
+      "id": "sv4",
+      "label": "Patches & Updates",
+      "type": "select",
+      "options": [
+        {
+          "label": "Monthly patching",
+          "cost": 100
+        },
+        {
+          "label": "Weekly patching",
+          "cost": 250
+        },
+        {
+          "label": "Auto-patching + testing",
+          "cost": 500
+        }
+      ]
+    },
+    {
+      "id": "sv5",
+      "label": "Support",
+      "type": "select",
+      "options": [
+        {
+          "label": "Business hours support",
+          "cost": 200
+        },
+        {
+          "label": "Extended hours",
+          "cost": 500
+        },
+        {
+          "label": "24/7 support",
+          "cost": 1200
+        }
+      ]
+    }
+  ]
+}

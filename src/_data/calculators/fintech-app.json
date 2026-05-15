@@ -1,0 +1,112 @@
+{
+  "id": "fintech-app",
+  "name": "Fintech App Development Cost Calculator",
+  "category": "industry-solutions",
+  "icon": "💰",
+  "description": "Estimate fintech application development costs.",
+  "inputs": [
+    {
+      "id": "ft1",
+      "label": "Core Features",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic wallet/payments",
+          "cost": 20000
+        },
+        {
+          "label": "Banking features",
+          "cost": 40000
+        },
+        {
+          "label": "Full fintech platform",
+          "cost": 80000
+        }
+      ]
+    },
+    {
+      "id": "ft2",
+      "label": "KYC/Verification",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic KYC",
+          "cost": 5000
+        },
+        {
+          "label": "Advanced KYC (ID verification)",
+          "cost": 12000
+        },
+        {
+          "label": "Enterprise KYC/AML",
+          "cost": 25000
+        }
+      ]
+    },
+    {
+      "id": "ft3",
+      "label": "Security",
+      "type": "select",
+      "options": [
+        {
+          "label": "Standard encryption",
+          "cost": 3000
+        },
+        {
+          "label": "PCI DSS Level 2",
+          "cost": 10000
+        },
+        {
+          "label": "PCI DSS Level 1",
+          "cost": 25000
+        }
+      ]
+    },
+    {
+      "id": "ft4",
+      "label": "Compliance",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic compliance",
+          "cost": 5000
+        },
+        {
+          "label": "Multi-region compliance",
+          "cost": 15000
+        },
+        {
+          "label": "Enterprise regulatory",
+          "cost": 30000
+        }
+      ]
+    },
+    {
+      "id": "ft5",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Payment processing",
+          "cost": 8000
+        },
+        {
+          "label": "Transaction history",
+          "cost": 3000
+        },
+        {
+          "label": "Reporting/analytics",
+          "cost": 5000
+        },
+        {
+          "label": "Third-party APIs",
+          "cost": 5000
+        },
+        {
+          "label": "Multi-currency",
+          "cost": 5000
+        }
+      ]
+    }
+  ]
+}

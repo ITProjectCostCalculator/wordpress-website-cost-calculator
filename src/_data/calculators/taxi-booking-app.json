@@ -1,0 +1,112 @@
+{
+  "id": "taxi-booking-app",
+  "name": "Taxi Booking App Cost Calculator",
+  "category": "industry-solutions",
+  "icon": "🚕",
+  "description": "Estimate taxi/ride-hailing app development costs.",
+  "inputs": [
+    {
+      "id": "tx1",
+      "label": "Apps",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Rider app",
+          "cost": 12000
+        },
+        {
+          "label": "Driver app",
+          "cost": 10000
+        },
+        {
+          "label": "Admin panel",
+          "cost": 6000
+        }
+      ]
+    },
+    {
+      "id": "tx2",
+      "label": "Maps & Navigation",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic map view",
+          "cost": 3000
+        },
+        {
+          "label": "Real-time tracking",
+          "cost": 6000
+        },
+        {
+          "label": "Route optimization + ETA",
+          "cost": 10000
+        }
+      ]
+    },
+    {
+      "id": "tx3",
+      "label": "Fare Logic",
+      "type": "select",
+      "options": [
+        {
+          "label": "Fixed pricing",
+          "cost": 1000
+        },
+        {
+          "label": "Distance-based",
+          "cost": 3000
+        },
+        {
+          "label": "Surge + dynamic pricing",
+          "cost": 6000
+        }
+      ]
+    },
+    {
+      "id": "tx4",
+      "label": "Payment",
+      "type": "select",
+      "options": [
+        {
+          "label": "Card payment",
+          "cost": 2000
+        },
+        {
+          "label": "Card + wallet",
+          "cost": 4000
+        },
+        {
+          "label": "Multi-payment + cash",
+          "cost": 7000
+        }
+      ]
+    },
+    {
+      "id": "tx5",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Push notifications",
+          "cost": 1500
+        },
+        {
+          "label": "Ride scheduling",
+          "cost": 2000
+        },
+        {
+          "label": "Rating system",
+          "cost": 1000
+        },
+        {
+          "label": "SOS/emergency",
+          "cost": 1500
+        },
+        {
+          "label": "Ride history",
+          "cost": 1000
+        }
+      ]
+    }
+  ]
+}

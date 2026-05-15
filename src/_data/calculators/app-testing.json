@@ -1,0 +1,112 @@
+{
+  "id": "app-testing",
+  "name": "App Testing Cost Calculator",
+  "category": "cloud-devops",
+  "icon": "🧪",
+  "description": "Estimate mobile and web application testing costs.",
+  "inputs": [
+    {
+      "id": "at1",
+      "label": "Platforms",
+      "type": "select",
+      "options": [
+        {
+          "label": "Single platform",
+          "cost": 3000
+        },
+        {
+          "label": "iOS + Android",
+          "cost": 5000
+        },
+        {
+          "label": "iOS + Android + Web",
+          "cost": 8000
+        }
+      ]
+    },
+    {
+      "id": "at2",
+      "label": "Device Coverage",
+      "type": "select",
+      "options": [
+        {
+          "label": "5 devices",
+          "cost": 1000
+        },
+        {
+          "label": "10 devices",
+          "cost": 2500
+        },
+        {
+          "label": "20+ devices",
+          "cost": 5000
+        }
+      ]
+    },
+    {
+      "id": "at3",
+      "label": "Test Types",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Functional testing",
+          "cost": 2000
+        },
+        {
+          "label": "Performance testing",
+          "cost": 2000
+        },
+        {
+          "label": "Security testing",
+          "cost": 2500
+        },
+        {
+          "label": "Usability testing",
+          "cost": 1500
+        },
+        {
+          "label": "Compatibility testing",
+          "cost": 1500
+        }
+      ]
+    },
+    {
+      "id": "at4",
+      "label": "Automation",
+      "type": "select",
+      "options": [
+        {
+          "label": "Manual testing only",
+          "cost": 0
+        },
+        {
+          "label": "Partial automation",
+          "cost": 3000
+        },
+        {
+          "label": "Full automation",
+          "cost": 8000
+        }
+      ]
+    },
+    {
+      "id": "at5",
+      "label": "Regression",
+      "type": "select",
+      "options": [
+        {
+          "label": "One-time testing",
+          "cost": 0
+        },
+        {
+          "label": "Monthly regression",
+          "cost": 2000
+        },
+        {
+          "label": "Continuous testing",
+          "cost": 5000
+        }
+      ]
+    }
+  ]
+}

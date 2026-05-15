@@ -1,0 +1,112 @@
+{
+  "id": "erp-migration",
+  "name": "ERP Migration Cost Calculator",
+  "category": "erp-systems",
+  "icon": "🔄",
+  "description": "Calculate the cost of migrating between ERP systems.",
+  "inputs": [
+    {
+      "id": "em1",
+      "label": "Source ERP",
+      "type": "select",
+      "options": [
+        {
+          "label": "Legacy/custom system",
+          "cost": 10000
+        },
+        {
+          "label": "Small ERP (QuickBooks, Tally)",
+          "cost": 5000
+        },
+        {
+          "label": "Mid-range ERP",
+          "cost": 12000
+        },
+        {
+          "label": "Enterprise ERP (SAP, Oracle)",
+          "cost": 25000
+        }
+      ]
+    },
+    {
+      "id": "em2",
+      "label": "Data Volume",
+      "type": "select",
+      "options": [
+        {
+          "label": "Small (under 100K records)",
+          "cost": 3000
+        },
+        {
+          "label": "Medium (100K-1M records)",
+          "cost": 8000
+        },
+        {
+          "label": "Large (1M+ records)",
+          "cost": 20000
+        }
+      ]
+    },
+    {
+      "id": "em3",
+      "label": "Field Mapping & Cleansing",
+      "type": "select",
+      "options": [
+        {
+          "label": "Simple mapping",
+          "cost": 3000
+        },
+        {
+          "label": "Complex transformation",
+          "cost": 8000
+        },
+        {
+          "label": "Heavy cleansing required",
+          "cost": 15000
+        }
+      ]
+    },
+    {
+      "id": "em4",
+      "label": "Downtime Tolerance",
+      "type": "select",
+      "options": [
+        {
+          "label": "Weekend migration OK",
+          "cost": 0
+        },
+        {
+          "label": "Minimal downtime",
+          "cost": 5000
+        },
+        {
+          "label": "Zero downtime required",
+          "cost": 15000
+        }
+      ]
+    },
+    {
+      "id": "em5",
+      "label": "Additional",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Parallel run period",
+          "cost": 5000
+        },
+        {
+          "label": "User retraining",
+          "cost": 3000
+        },
+        {
+          "label": "Post-migration validation",
+          "cost": 4000
+        },
+        {
+          "label": "Rollback plan",
+          "cost": 2000
+        }
+      ]
+    }
+  ]
+}

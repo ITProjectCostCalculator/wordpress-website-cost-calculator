@@ -1,0 +1,139 @@
+{
+  "id": "mobile-app",
+  "name": "Mobile App Development Cost Calculator",
+  "category": "mobile-apps",
+  "icon": "📱",
+  "description": "Estimate mobile app development costs across platforms and feature sets.",
+  "inputs": [
+    {
+      "id": "ma1",
+      "label": "Platform",
+      "type": "select",
+      "options": [
+        {
+          "label": "iOS only",
+          "cost": 15000
+        },
+        {
+          "label": "Android only",
+          "cost": 14000
+        },
+        {
+          "label": "Both (native)",
+          "cost": 28000
+        },
+        {
+          "label": "Cross-platform (React Native/Flutter)",
+          "cost": 20000
+        }
+      ]
+    },
+    {
+      "id": "ma2",
+      "label": "App Complexity",
+      "type": "select",
+      "options": [
+        {
+          "label": "Simple (5-10 screens)",
+          "cost": 5000
+        },
+        {
+          "label": "Medium (10-25 screens)",
+          "cost": 15000
+        },
+        {
+          "label": "Complex (25+ screens)",
+          "cost": 35000
+        }
+      ]
+    },
+    {
+      "id": "ma3",
+      "label": "UI/UX Design Level",
+      "type": "select",
+      "options": [
+        {
+          "label": "Standard UI",
+          "cost": 2000
+        },
+        {
+          "label": "Custom branded UI",
+          "cost": 6000
+        },
+        {
+          "label": "Premium animated UI",
+          "cost": 15000
+        }
+      ]
+    },
+    {
+      "id": "ma4",
+      "label": "Backend",
+      "type": "select",
+      "options": [
+        {
+          "label": "Firebase/BaaS",
+          "cost": 3000
+        },
+        {
+          "label": "Custom Node.js/Python",
+          "cost": 10000
+        },
+        {
+          "label": "Enterprise backend",
+          "cost": 25000
+        }
+      ]
+    },
+    {
+      "id": "ma5",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "User authentication",
+          "cost": 2000
+        },
+        {
+          "label": "Payment integration",
+          "cost": 3000
+        },
+        {
+          "label": "Push notifications",
+          "cost": 1500
+        },
+        {
+          "label": "Chat/messaging",
+          "cost": 5000
+        },
+        {
+          "label": "Maps/location",
+          "cost": 2500
+        },
+        {
+          "label": "Camera/media",
+          "cost": 2000
+        }
+      ]
+    },
+    {
+      "id": "ma6",
+      "label": "Timeline",
+      "type": "select",
+      "options": [
+        {
+          "label": "Standard (16-24 weeks)",
+          "cost": 0
+        },
+        {
+          "label": "Accelerated (10-14 weeks)",
+          "cost": 10000
+        },
+        {
+          "label": "Rush (6-8 weeks)",
+          "cost": 25000
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "id": "custom-crm",
+  "name": "Custom CRM Cost Calculator",
+  "category": "industry-solutions",
+  "icon": "📋",
+  "description": "Estimate custom CRM system development costs.",
+  "inputs": [
+    {
+      "id": "cc1",
+      "label": "Modules",
+      "type": "select",
+      "options": [
+        {
+          "label": "Core (contacts + deals)",
+          "cost": 10000
+        },
+        {
+          "label": "Standard (5-7 modules)",
+          "cost": 25000
+        },
+        {
+          "label": "Full CRM suite",
+          "cost": 50000
+        }
+      ]
+    },
+    {
+      "id": "cc2",
+      "label": "User Roles",
+      "type": "select",
+      "options": [
+        {
+          "label": "2-3 roles",
+          "cost": 2000
+        },
+        {
+          "label": "5+ roles",
+          "cost": 5000
+        },
+        {
+          "label": "Complex hierarchy",
+          "cost": 10000
+        }
+      ]
+    },
+    {
+      "id": "cc3",
+      "label": "Sales Pipeline",
+      "type": "select",
+      "options": [
+        {
+          "label": "Single pipeline",
+          "cost": 2000
+        },
+        {
+          "label": "Multi-pipeline",
+          "cost": 5000
+        },
+        {
+          "label": "AI-powered pipeline",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "cc4",
+      "label": "Automation",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic workflows",
+          "cost": 3000
+        },
+        {
+          "label": "Advanced automation",
+          "cost": 8000
+        },
+        {
+          "label": "AI-driven automation",
+          "cost": 18000
+        }
+      ]
+    },
+    {
+      "id": "cc5",
+      "label": "Integrations",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Email integration",
+          "cost": 2000
+        },
+        {
+          "label": "Phone/VoIP",
+          "cost": 3000
+        },
+        {
+          "label": "Marketing tools",
+          "cost": 2000
+        },
+        {
+          "label": "Accounting software",
+          "cost": 2500
+        },
+        {
+          "label": "Custom API",
+          "cost": 3000
+        }
+      ]
+    }
+  ]
+}

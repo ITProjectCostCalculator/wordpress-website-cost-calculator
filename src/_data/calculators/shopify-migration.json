@@ -1,0 +1,116 @@
+{
+  "id": "shopify-migration",
+  "name": "Shopify Migration Cost Calculator",
+  "category": "ecommerce",
+  "icon": "📦",
+  "description": "Calculate the cost of migrating to Shopify from another platform.",
+  "inputs": [
+    {
+      "id": "sm1",
+      "label": "Source Platform",
+      "type": "select",
+      "options": [
+        {
+          "label": "WooCommerce",
+          "cost": 3000
+        },
+        {
+          "label": "Magento",
+          "cost": 6000
+        },
+        {
+          "label": "BigCommerce",
+          "cost": 3500
+        },
+        {
+          "label": "Custom/Other",
+          "cost": 5000
+        }
+      ]
+    },
+    {
+      "id": "sm2",
+      "label": "Products (SKUs)",
+      "type": "select",
+      "options": [
+        {
+          "label": "Under 100",
+          "cost": 1000
+        },
+        {
+          "label": "100-1000",
+          "cost": 3000
+        },
+        {
+          "label": "1000-10000",
+          "cost": 6000
+        },
+        {
+          "label": "10000+",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "sm3",
+      "label": "Historical Data",
+      "type": "select",
+      "options": [
+        {
+          "label": "Products only",
+          "cost": 0
+        },
+        {
+          "label": "Products + Orders",
+          "cost": 2000
+        },
+        {
+          "label": "Full history (orders + customers)",
+          "cost": 5000
+        }
+      ]
+    },
+    {
+      "id": "sm4",
+      "label": "URL Redirects & SEO",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic redirects",
+          "cost": 500
+        },
+        {
+          "label": "Full SEO migration",
+          "cost": 2000
+        },
+        {
+          "label": "Enterprise SEO preservation",
+          "cost": 5000
+        }
+      ]
+    },
+    {
+      "id": "sm5",
+      "label": "Additional",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "App replacement setup",
+          "cost": 2000
+        },
+        {
+          "label": "Theme matching",
+          "cost": 3000
+        },
+        {
+          "label": "Custom functionality rebuild",
+          "cost": 5000
+        },
+        {
+          "label": "Staff training",
+          "cost": 1000
+        }
+      ]
+    }
+  ]
+}

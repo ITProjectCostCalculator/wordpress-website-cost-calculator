@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Maintenance Cost Calculator | IT Project Cost Calculator</title>
+    <meta name="description" content="Estimate ongoing mobile app maintenance and support costs per month. Free instant estimate tool — get a realistic USD budget range for your mobile apps project.">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+    <link rel="canonical" href="https://itprojectcostcalculator.github.io/calculators/app-maintenance/">
+    <meta property="og:title" content="App Maintenance Cost Calculator">
+    <meta property="og:description" content="Estimate ongoing mobile app maintenance and support costs per month. Free instant estimate tool — get a realistic USD budget range for your mobile apps project.">
+    <meta property="og:url" content="https://itprojectcostcalculator.github.io/calculators/app-maintenance/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="IT Project Cost Calculator">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="App Maintenance Cost Calculator">
+    <meta name="twitter:description" content="Estimate ongoing mobile app maintenance and support costs per month. Free instant estimate tool — get a realistic USD budget range for your mobile apps project.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@graph":[
+      {"@type":"WebPage","@id":"https://itprojectcostcalculator.github.io/calculators/app-maintenance/#webpage","url":"https://itprojectcostcalculator.github.io/calculators/app-maintenance/","name":"App Maintenance Cost Calculator","description":"Estimate ongoing mobile app maintenance and support costs per month. Free instant estimate tool — get a realistic USD budget range for your mobile apps project.","isPartOf":{"@id":"https://itprojectcostcalculator.github.io/#website"},"breadcrumb":{"@id":"https://itprojectcostcalculator.github.io/calculators/app-maintenance/#breadcrumb"},"inLanguage":"en-US"},
+      {"@type":"WebSite","@id":"https://itprojectcostcalculator.github.io/#website","url":"https://itprojectcostcalculator.github.io/","name":"IT Project Cost Calculator","description":"Free IT project cost calculators for 80+ project types.","inLanguage":"en-US"},
+      {"@type":"BreadcrumbList","@id":"https://itprojectcostcalculator.github.io/calculators/app-maintenance/#breadcrumb","itemListElement":[
+        {"@type":"ListItem","position":1,"name":"Home","item":"https://itprojectcostcalculator.github.io/"},
+        {"@type":"ListItem","position":2,"name":"Mobile Apps","item":"https://itprojectcostcalculator.github.io/?cat=mobile-apps"},
+        {"@type":"ListItem","position":3,"name":"App Maintenance Cost Calculator","item":"https://itprojectcostcalculator.github.io/calculators/app-maintenance/"}
+      ]}
+    ]}
+    </script>
+</head>
+<body>
+    <header id="site-header">
+        <div class="header-inner">
+            <a href="/" class="logo"><span class="logo-icon">⚡</span><span class="logo-text">IT Project Cost Calculator</span></a>
+            <nav class="header-nav">
+                <a href="/" class="nav-link" id="nav-home">All Calculators</a>
+                <a href="#contact" class="nav-link btn-nav-cta" id="nav-contact">Get a Quote</a>
+            </nav>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+    <main id="calculator-view">
+        <div class="calc-header-bar">
+            <a href="/" class="back-btn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg> All Calculators</a>
+            <div class="calc-breadcrumb"><a href="/">Home</a> <span>›</span> <a href="/?cat=mobile-apps">Mobile Apps</a> <span>›</span> <span>App Maintenance Cost Calculator</span></div>
+        </div>
+        <div class="calc-layout">
+            <div class="calc-form-panel">
+                <div class="calc-title-block">
+                    <span class="calc-icon">🛠️</span>
+                    <div>
+                        <h1 class="calc-title">App Maintenance Cost Calculator</h1>
+                        <p class="calc-desc">Estimate ongoing mobile app maintenance and support costs per month.</p>
+                    </div>
+                </div>
+                <form id="calc-form" class="calc-form"></form>
+            </div>
+            <div class="calc-results-panel">
+                <div class="results-card" id="results-card">
+                    <div class="results-label">Estimated Project Cost</div>
+                    <div class="results-amount" id="results-amount">$0 — $0</div>
+                    <div class="results-note">Estimated range based on your selections</div>
+                    <div class="results-breakdown" id="results-breakdown"></div>
+                    <div class="results-actions">
+                        <button type="button" class="btn btn-primary" id="btn-share">📤 Share Estimate</button>
+                        <button type="button" class="btn btn-accent" id="btn-quote">💬 Get Exact Quote</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <div class="modal-overlay hidden" id="share-modal">
+        <div class="modal-content share-modal-content">
+            <button class="modal-close" id="share-modal-close">&times;</button>
+            <h2 class="modal-title">Share Your Estimate</h2>
+            <div class="share-summary" id="share-summary"></div>
+            <div class="share-buttons">
+                <button class="share-btn share-pdf" id="share-pdf">📄 Download PDF</button>
+                <button class="share-btn share-whatsapp" id="share-whatsapp">💬 WhatsApp</button>
+                <button class="share-btn share-linkedin" id="share-linkedin">💼 LinkedIn</button>
+                <button class="share-btn share-facebook" id="share-facebook">👤 Facebook</button>
+                <button class="share-btn share-twitter" id="share-twitter">🐦 X / Twitter</button>
+                <button class="share-btn share-email" id="share-email">✉️ Email</button>
+                <button class="share-btn share-copy" id="share-copy">📋 Copy Link</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay hidden" id="contact-modal">
+        <div class="modal-content contact-modal-content">
+            <button class="modal-close" id="contact-modal-close">&times;</button>
+            <h2 class="modal-title">Get an Exact Quote</h2>
+            <p class="modal-subtitle">Our team will review your requirements and provide a detailed proposal.</p>
+            <div class="contact-estimate-summary" id="contact-estimate-summary"></div>
+            <form id="contact-form" class="contact-form">
+                <div class="form-row"><div class="form-group"><label for="contact-name">Full Name <span class="req">*</span></label><input type="text" id="contact-name" name="name" required placeholder="John Doe"></div><div class="form-group"><label for="contact-email">Email <span class="req">*</span></label><input type="email" id="contact-email" name="email" required placeholder="john@company.com"></div></div>
+                <div class="form-row"><div class="form-group"><label for="contact-phone">Phone</label><input type="tel" id="contact-phone" name="phone" placeholder="+1 (555) 000-0000"></div><div class="form-group"><label for="contact-country">Country <span class="req">*</span></label><input type="text" id="contact-country" name="country" required placeholder="United States"></div></div>
+                <div class="form-row"><div class="form-group"><label for="contact-pincode">Pin / Zip Code</label><input type="text" id="contact-pincode" name="pincode" placeholder="10001"></div><div class="form-group"><label for="contact-company">Company</label><input type="text" id="contact-company" name="company" placeholder="Acme Corp"></div></div>
+                <div class="form-group full-width"><label for="contact-message">Project Details <span class="req">*</span></label><textarea id="contact-message" name="message" rows="4" required placeholder="Describe your project requirements..."></textarea></div>
+                <input type="hidden" id="contact-calculator" name="calculator"><input type="hidden" id="contact-estimate" name="estimate"><input type="hidden" id="contact-selections" name="selections">
+                <button type="submit" class="btn btn-primary btn-full">📩 Send Quote Request</button>
+            </form>
+        </div>
+    </div>
+    <footer id="site-footer"><div class="footer-inner"><div class="footer-brand"><span class="logo-icon">⚡</span> IT Project Cost Calculator</div><p class="footer-note">Free estimation tool for IT project budgeting. All estimates are approximate ranges based on industry standards.</p><p class="footer-copy">&copy; 2025 IT Project Cost Calculator. All rights reserved.</p></div></footer>
+    <script>var CALC_DATA={"id":"app-maintenance","name":"App Maintenance Cost Calculator","category":"mobile-apps","icon":"🛠️","description":"Estimate ongoing mobile app maintenance and support costs per month.","inputs":[{"id":"am1","label":"Monthly Updates","type":"select","options":[{"label":"Bug fixes only","cost":500},{"label":"Bug fixes + minor features","cost":1200},{"label":"Full ongoing development","cost":3000}]},{"id":"am2","label":"OS Upgrades","type":"select","options":[{"label":"Annual OS compatibility","cost":300},{"label":"Immediate OS updates","cost":800}]},{"id":"am3","label":"Monitoring","type":"select","options":[{"label":"Basic crash reporting","cost":100},{"label":"Full APM monitoring","cost":400},{"label":"24/7 monitoring + alerts","cost":800}]},{"id":"am4","label":"App Store Support","type":"select","options":[{"label":"Self-managed","cost":0},{"label":"Managed submissions","cost":300},{"label":"Full ASO + management","cost":800}]},{"id":"am5","label":"Support Hours","type":"select","options":[{"label":"5 hrs/month","cost":200},{"label":"10 hrs/month","cost":400},{"label":"20 hrs/month","cost":750},{"label":"Unlimited","cost":1500}]}]};</script>
+    <script src="/js/calc-engine.js"></script>
+</body>
+</html>

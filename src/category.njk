@@ -1,0 +1,44 @@
+---
+pagination:
+  data: collections.categories
+  size: 1
+  alias: cat
+layout: layouts/base.njk
+permalink: "/blog/category/{{ cat | slugify }}/index.html"
+seoTitle: "{{ cat }} - Blog Category"
+seoDescription: "Read all posts in the {{ cat }} category."
+---
+<main id="blog-view" style="padding-top: calc(var(--header-h) + 40px); padding-bottom: 60px;">
+    <div class="search-section">
+        <div class="calc-breadcrumb" style="margin-bottom: 20px;">
+            <a href="/">Home</a> <span>›</span> 
+            <a href="/blog/">Blog</a> <span>›</span> 
+            <span>{{ cat }}</span>
+        </div>
+    </div>
+
+    <section class="hero" style="padding-top: 0; padding-bottom: 40px;">
+        <div class="hero-inner">
+            <h1 class="hero-title gradient-text">{{ cat }}</h1>
+            <p class="hero-subtitle">Exploring all articles categorized under {{ cat }}</p>
+        </div>
+    </section>
+
+    <div class="grid-section">
+        <div class="calculator-grid">
+            {% set catlist = collections.blog %}
+            {% for post in catlist %}
+                {% if post.data.category == cat %}
+                <a href="{{ post.url }}" class="calc-card">
+                    <div class="calc-card-name" style="font-size: 1.1rem; margin-bottom: 12px;">{{ post.data.title }}</div>
+                    <span class="calc-card-category" style="margin-bottom: 12px;">{{ post.data.category }}</span>
+                    <div style="color: var(--text-muted); font-size: 0.85rem; display: flex; align-items: center; gap: 6px;">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                        {{ post.date | date("MMM DD, YYYY") }}
+                    </div>
+                </a>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</main>

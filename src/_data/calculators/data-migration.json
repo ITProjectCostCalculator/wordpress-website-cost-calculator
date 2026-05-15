@@ -1,0 +1,108 @@
+{
+  "id": "data-migration",
+  "name": "Data Migration Cost Calculator",
+  "category": "ai-data",
+  "icon": "💾",
+  "description": "Calculate data migration project costs.",
+  "inputs": [
+    {
+      "id": "dm1",
+      "label": "Source System",
+      "type": "select",
+      "options": [
+        {
+          "label": "Single database",
+          "cost": 3000
+        },
+        {
+          "label": "Multiple databases",
+          "cost": 8000
+        },
+        {
+          "label": "Legacy mainframe",
+          "cost": 20000
+        }
+      ]
+    },
+    {
+      "id": "dm2",
+      "label": "Record Count",
+      "type": "select",
+      "options": [
+        {
+          "label": "Under 100K",
+          "cost": 2000
+        },
+        {
+          "label": "100K-1M",
+          "cost": 5000
+        },
+        {
+          "label": "1M-10M",
+          "cost": 12000
+        },
+        {
+          "label": "10M+",
+          "cost": 25000
+        }
+      ]
+    },
+    {
+      "id": "dm3",
+      "label": "Field Mapping",
+      "type": "select",
+      "options": [
+        {
+          "label": "Simple 1:1 mapping",
+          "cost": 1000
+        },
+        {
+          "label": "Complex transformations",
+          "cost": 5000
+        },
+        {
+          "label": "Multi-system mapping",
+          "cost": 10000
+        }
+      ]
+    },
+    {
+      "id": "dm4",
+      "label": "Data Cleansing",
+      "type": "select",
+      "options": [
+        {
+          "label": "Minimal cleansing",
+          "cost": 1000
+        },
+        {
+          "label": "Moderate cleansing",
+          "cost": 4000
+        },
+        {
+          "label": "Heavy cleansing + dedup",
+          "cost": 10000
+        }
+      ]
+    },
+    {
+      "id": "dm5",
+      "label": "Validation & Testing",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic validation",
+          "cost": 1000
+        },
+        {
+          "label": "Comprehensive testing",
+          "cost": 3000
+        },
+        {
+          "label": "Full regression testing",
+          "cost": 6000
+        }
+      ]
+    }
+  ]
+}

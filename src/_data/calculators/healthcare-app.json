@@ -1,0 +1,112 @@
+{
+  "id": "healthcare-app",
+  "name": "Healthcare App Development Cost Calculator",
+  "category": "industry-solutions",
+  "icon": "🏥",
+  "description": "Calculate healthcare application development costs.",
+  "inputs": [
+    {
+      "id": "hc1",
+      "label": "User Roles",
+      "type": "select",
+      "options": [
+        {
+          "label": "Patient only",
+          "cost": 8000
+        },
+        {
+          "label": "Patient + Doctor",
+          "cost": 15000
+        },
+        {
+          "label": "Patient + Doctor + Admin + Staff",
+          "cost": 25000
+        }
+      ]
+    },
+    {
+      "id": "hc2",
+      "label": "Appointment System",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic booking",
+          "cost": 3000
+        },
+        {
+          "label": "Advanced scheduling",
+          "cost": 6000
+        },
+        {
+          "label": "Multi-provider scheduling",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "hc3",
+      "label": "Medical Records",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic health profiles",
+          "cost": 3000
+        },
+        {
+          "label": "EHR integration",
+          "cost": 10000
+        },
+        {
+          "label": "Full EHR system",
+          "cost": 25000
+        }
+      ]
+    },
+    {
+      "id": "hc4",
+      "label": "Compliance",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic security",
+          "cost": 2000
+        },
+        {
+          "label": "HIPAA compliant",
+          "cost": 8000
+        },
+        {
+          "label": "HIPAA + HL7/FHIR",
+          "cost": 18000
+        }
+      ]
+    },
+    {
+      "id": "hc5",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Telemedicine/video",
+          "cost": 8000
+        },
+        {
+          "label": "Prescription management",
+          "cost": 5000
+        },
+        {
+          "label": "Lab results",
+          "cost": 3000
+        },
+        {
+          "label": "Push notifications",
+          "cost": 1500
+        },
+        {
+          "label": "Payment integration",
+          "cost": 3000
+        }
+      ]
+    }
+  ]
+}

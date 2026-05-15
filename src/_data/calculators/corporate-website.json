@@ -1,0 +1,127 @@
+{
+  "id": "corporate-website",
+  "name": "Corporate Website Cost Calculator",
+  "category": "web-development",
+  "icon": "🏢",
+  "description": "Calculate the cost of a professional corporate website with advanced features.",
+  "inputs": [
+    {
+      "id": "c1",
+      "label": "Page Count",
+      "type": "select",
+      "options": [
+        {
+          "label": "Up to 10 pages",
+          "cost": 3000
+        },
+        {
+          "label": "10-25 pages",
+          "cost": 7000
+        },
+        {
+          "label": "25-50 pages",
+          "cost": 14000
+        },
+        {
+          "label": "50+ pages",
+          "cost": 25000
+        }
+      ]
+    },
+    {
+      "id": "c2",
+      "label": "Custom UI Design",
+      "type": "select",
+      "options": [
+        {
+          "label": "Standard Template",
+          "cost": 1000
+        },
+        {
+          "label": "Custom Branded Design",
+          "cost": 5000
+        },
+        {
+          "label": "Premium Interactive Design",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "c3",
+      "label": "CMS Platform",
+      "type": "select",
+      "options": [
+        {
+          "label": "WordPress",
+          "cost": 1500
+        },
+        {
+          "label": "Drupal",
+          "cost": 3000
+        },
+        {
+          "label": "Custom CMS",
+          "cost": 8000
+        }
+      ]
+    },
+    {
+      "id": "c4",
+      "label": "Animations & Interactions",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic (hover effects)",
+          "cost": 500
+        },
+        {
+          "label": "Moderate (scroll animations)",
+          "cost": 2000
+        },
+        {
+          "label": "Advanced (parallax, video)",
+          "cost": 5000
+        }
+      ]
+    },
+    {
+      "id": "c5",
+      "label": "Additional Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Lead Capture Forms",
+          "cost": 600
+        },
+        {
+          "label": "Multilingual Pages",
+          "cost": 3000
+        },
+        {
+          "label": "Content Support / Copywriting",
+          "cost": 2500
+        },
+        {
+          "label": "Analytics & Tracking Setup",
+          "cost": 800
+        }
+      ]
+    },
+    {
+      "id": "c6",
+      "label": "Timeline",
+      "type": "select",
+      "options": [
+        {
+          "label": "Standard (10-14 weeks)",
+          "cost": 0
+        },
+        {
+          "label": "Fast Track (6-8 weeks)",
+          "cost": 4000
+        }
+      ]
+    }
+  ]
+}

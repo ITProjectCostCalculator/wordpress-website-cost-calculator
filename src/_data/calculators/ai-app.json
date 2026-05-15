@@ -1,0 +1,112 @@
+{
+  "id": "ai-app",
+  "name": "AI App Development Cost Calculator",
+  "category": "ai-data",
+  "icon": "🧠",
+  "description": "Estimate AI-powered application development costs.",
+  "inputs": [
+    {
+      "id": "ai1",
+      "label": "AI Use Case",
+      "type": "select",
+      "options": [
+        {
+          "label": "Text generation/chatbot",
+          "cost": 15000
+        },
+        {
+          "label": "Image/video analysis",
+          "cost": 25000
+        },
+        {
+          "label": "Recommendation engine",
+          "cost": 20000
+        },
+        {
+          "label": "Predictive analytics",
+          "cost": 30000
+        }
+      ]
+    },
+    {
+      "id": "ai2",
+      "label": "Model Type",
+      "type": "select",
+      "options": [
+        {
+          "label": "Pre-trained API (OpenAI, etc.)",
+          "cost": 3000
+        },
+        {
+          "label": "Fine-tuned model",
+          "cost": 15000
+        },
+        {
+          "label": "Custom trained model",
+          "cost": 40000
+        }
+      ]
+    },
+    {
+      "id": "ai3",
+      "label": "Data Source",
+      "type": "select",
+      "options": [
+        {
+          "label": "Structured data",
+          "cost": 3000
+        },
+        {
+          "label": "Unstructured data",
+          "cost": 8000
+        },
+        {
+          "label": "Multi-source data pipeline",
+          "cost": 18000
+        }
+      ]
+    },
+    {
+      "id": "ai4",
+      "label": "Frontend",
+      "type": "select",
+      "options": [
+        {
+          "label": "Simple web interface",
+          "cost": 3000
+        },
+        {
+          "label": "Full web app",
+          "cost": 8000
+        },
+        {
+          "label": "Web + mobile app",
+          "cost": 18000
+        }
+      ]
+    },
+    {
+      "id": "ai5",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "User authentication",
+          "cost": 2000
+        },
+        {
+          "label": "API access",
+          "cost": 3000
+        },
+        {
+          "label": "Usage analytics",
+          "cost": 2000
+        },
+        {
+          "label": "Model monitoring",
+          "cost": 3000
+        }
+      ]
+    }
+  ]
+}

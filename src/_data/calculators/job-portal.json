@@ -1,0 +1,93 @@
+{
+  "id": "job-portal",
+  "name": "Job Portal Development Cost Calculator",
+  "category": "industry-solutions",
+  "icon": "💼",
+  "description": "Estimate job portal/recruitment platform costs.",
+  "inputs": [
+    {
+      "id": "jp1",
+      "label": "Core Platform",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic job board",
+          "cost": 8000
+        },
+        {
+          "label": "Advanced portal",
+          "cost": 18000
+        },
+        {
+          "label": "Enterprise recruitment platform",
+          "cost": 35000
+        }
+      ]
+    },
+    {
+      "id": "jp2",
+      "label": "Candidate Features",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic profiles",
+          "cost": 2000
+        },
+        {
+          "label": "Resume builder + matching",
+          "cost": 5000
+        },
+        {
+          "label": "AI-powered matching",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "jp3",
+      "label": "Employer Features",
+      "type": "select",
+      "options": [
+        {
+          "label": "Job posting + basic ATS",
+          "cost": 3000
+        },
+        {
+          "label": "Advanced ATS",
+          "cost": 8000
+        },
+        {
+          "label": "Enterprise recruitment suite",
+          "cost": 15000
+        }
+      ]
+    },
+    {
+      "id": "jp4",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Advanced search filters",
+          "cost": 3000
+        },
+        {
+          "label": "Payment/subscription",
+          "cost": 3000
+        },
+        {
+          "label": "Email notifications",
+          "cost": 1000
+        },
+        {
+          "label": "Video interviews",
+          "cost": 5000
+        },
+        {
+          "label": "Analytics dashboard",
+          "cost": 3000
+        }
+      ]
+    }
+  ]
+}

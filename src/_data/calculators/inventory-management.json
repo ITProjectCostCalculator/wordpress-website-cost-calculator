@@ -1,0 +1,101 @@
+{
+  "id": "inventory-management",
+  "name": "Inventory Management Software Cost Calculator",
+  "category": "industry-solutions",
+  "icon": "📦",
+  "description": "Estimate inventory management system development costs.",
+  "inputs": [
+    {
+      "id": "im1",
+      "label": "SKU Count",
+      "type": "select",
+      "options": [
+        {
+          "label": "Under 500 SKUs",
+          "cost": 5000
+        },
+        {
+          "label": "500-5000 SKUs",
+          "cost": 10000
+        },
+        {
+          "label": "5000-50000 SKUs",
+          "cost": 20000
+        },
+        {
+          "label": "50000+ SKUs",
+          "cost": 35000
+        }
+      ]
+    },
+    {
+      "id": "im2",
+      "label": "Warehouses",
+      "type": "select",
+      "options": [
+        {
+          "label": "Single warehouse",
+          "cost": 3000
+        },
+        {
+          "label": "2-5 warehouses",
+          "cost": 8000
+        },
+        {
+          "label": "5+ warehouses",
+          "cost": 18000
+        }
+      ]
+    },
+    {
+      "id": "im3",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Barcode/QR scanning",
+          "cost": 3000
+        },
+        {
+          "label": "Stock alerts",
+          "cost": 1500
+        },
+        {
+          "label": "Purchase orders",
+          "cost": 3000
+        },
+        {
+          "label": "Reporting dashboard",
+          "cost": 3000
+        },
+        {
+          "label": "ERP integration",
+          "cost": 5000
+        },
+        {
+          "label": "Lot/serial tracking",
+          "cost": 4000
+        }
+      ]
+    },
+    {
+      "id": "im4",
+      "label": "Mobile Access",
+      "type": "select",
+      "options": [
+        {
+          "label": "Web only",
+          "cost": 0
+        },
+        {
+          "label": "Responsive web",
+          "cost": 2000
+        },
+        {
+          "label": "Native mobile app",
+          "cost": 8000
+        }
+      ]
+    }
+  ]
+}

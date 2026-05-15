@@ -1,0 +1,108 @@
+{
+  "id": "data-analytics-dashboard",
+  "name": "Data Analytics Dashboard Cost Calculator",
+  "category": "ai-data",
+  "icon": "📊",
+  "description": "Calculate data analytics dashboard development costs.",
+  "inputs": [
+    {
+      "id": "da1",
+      "label": "Data Sources",
+      "type": "select",
+      "options": [
+        {
+          "label": "1-2 sources",
+          "cost": 3000
+        },
+        {
+          "label": "3-5 sources",
+          "cost": 7000
+        },
+        {
+          "label": "6+ sources",
+          "cost": 15000
+        }
+      ]
+    },
+    {
+      "id": "da2",
+      "label": "Reports",
+      "type": "select",
+      "options": [
+        {
+          "label": "3-5 reports",
+          "cost": 3000
+        },
+        {
+          "label": "6-15 reports",
+          "cost": 7000
+        },
+        {
+          "label": "15+ reports",
+          "cost": 15000
+        }
+      ]
+    },
+    {
+      "id": "da3",
+      "label": "Chart Types",
+      "type": "select",
+      "options": [
+        {
+          "label": "Standard charts",
+          "cost": 2000
+        },
+        {
+          "label": "Advanced visualizations",
+          "cost": 5000
+        },
+        {
+          "label": "Custom interactive visuals",
+          "cost": 10000
+        }
+      ]
+    },
+    {
+      "id": "da4",
+      "label": "User Roles",
+      "type": "select",
+      "options": [
+        {
+          "label": "Single view",
+          "cost": 0
+        },
+        {
+          "label": "Role-based views",
+          "cost": 3000
+        },
+        {
+          "label": "Custom per-user",
+          "cost": 6000
+        }
+      ]
+    },
+    {
+      "id": "da5",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Scheduled refresh",
+          "cost": 1500
+        },
+        {
+          "label": "Export (PDF/CSV/Excel)",
+          "cost": 1000
+        },
+        {
+          "label": "Alerts & notifications",
+          "cost": 2000
+        },
+        {
+          "label": "Embedded sharing",
+          "cost": 2500
+        }
+      ]
+    }
+  ]
+}

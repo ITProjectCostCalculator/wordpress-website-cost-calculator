@@ -1,0 +1,107 @@
+{
+  "id": "dedicated-team",
+  "name": "Dedicated Development Team Cost Calculator",
+  "category": "cloud-devops",
+  "icon": "👥",
+  "description": "Calculate dedicated development team costs per month.",
+  "inputs": [
+    {
+      "id": "dt1",
+      "label": "Team Size",
+      "type": "range",
+      "min": 1,
+      "max": 20,
+      "default": 3,
+      "costPerUnit": 3000,
+      "unit": "developers"
+    },
+    {
+      "id": "dt2",
+      "label": "Seniority Mix",
+      "type": "select",
+      "options": [
+        {
+          "label": "Junior developers",
+          "cost": 0
+        },
+        {
+          "label": "Mid-level developers",
+          "cost": 3000
+        },
+        {
+          "label": "Senior developers",
+          "cost": 8000
+        },
+        {
+          "label": "Mixed team (junior to senior)",
+          "cost": 5000
+        }
+      ]
+    },
+    {
+      "id": "dt3",
+      "label": "Duration",
+      "type": "select",
+      "options": [
+        {
+          "label": "3 months",
+          "cost": 0
+        },
+        {
+          "label": "6 months (5% discount)",
+          "cost": -1000
+        },
+        {
+          "label": "12 months (10% discount)",
+          "cost": -3000
+        }
+      ]
+    },
+    {
+      "id": "dt4",
+      "label": "Engagement Model",
+      "type": "select",
+      "options": [
+        {
+          "label": "Part-time (20 hrs/week)",
+          "cost": 0
+        },
+        {
+          "label": "Full-time (40 hrs/week)",
+          "cost": 5000
+        },
+        {
+          "label": "Extended (with PM + QA)",
+          "cost": 10000
+        }
+      ]
+    },
+    {
+      "id": "dt5",
+      "label": "Additional Roles",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Project Manager",
+          "cost": 3000
+        },
+        {
+          "label": "UI/UX Designer",
+          "cost": 2500
+        },
+        {
+          "label": "QA Engineer",
+          "cost": 2000
+        },
+        {
+          "label": "DevOps Engineer",
+          "cost": 3000
+        },
+        {
+          "label": "Business Analyst",
+          "cost": 2500
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "id": "business-process-automation",
+  "name": "Business Process Automation Cost Calculator",
+  "category": "erp-systems",
+  "icon": "⚡",
+  "description": "Calculate business process automation implementation costs.",
+  "inputs": [
+    {
+      "id": "bp1",
+      "label": "Process Count",
+      "type": "select",
+      "options": [
+        {
+          "label": "1-3 processes",
+          "cost": 5000
+        },
+        {
+          "label": "4-8 processes",
+          "cost": 12000
+        },
+        {
+          "label": "8+ processes",
+          "cost": 25000
+        }
+      ]
+    },
+    {
+      "id": "bp2",
+      "label": "Systems Integration",
+      "type": "select",
+      "options": [
+        {
+          "label": "2-3 systems",
+          "cost": 3000
+        },
+        {
+          "label": "4-6 systems",
+          "cost": 8000
+        },
+        {
+          "label": "Complex ecosystem",
+          "cost": 18000
+        }
+      ]
+    },
+    {
+      "id": "bp3",
+      "label": "Workflow Complexity",
+      "type": "select",
+      "options": [
+        {
+          "label": "Simple linear",
+          "cost": 2000
+        },
+        {
+          "label": "Conditional branching",
+          "cost": 5000
+        },
+        {
+          "label": "Complex decision trees",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "bp4",
+      "label": "Approval Rules",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic approvals",
+          "cost": 1000
+        },
+        {
+          "label": "Multi-level",
+          "cost": 3000
+        },
+        {
+          "label": "Dynamic routing",
+          "cost": 6000
+        }
+      ]
+    },
+    {
+      "id": "bp5",
+      "label": "Additional",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Reporting dashboard",
+          "cost": 3000
+        },
+        {
+          "label": "Email notifications",
+          "cost": 1000
+        },
+        {
+          "label": "Document automation",
+          "cost": 2500
+        },
+        {
+          "label": "RPA integration",
+          "cost": 5000
+        }
+      ]
+    }
+  ]
+}

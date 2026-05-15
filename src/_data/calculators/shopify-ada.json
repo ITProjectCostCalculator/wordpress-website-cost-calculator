@@ -1,0 +1,108 @@
+{
+  "id": "shopify-ada",
+  "name": "Shopify ADA Compliance Cost Calculator",
+  "category": "ecommerce",
+  "icon": "♿",
+  "description": "Estimate Shopify ADA/WCAG compliance costs.",
+  "inputs": [
+    {
+      "id": "ada1",
+      "label": "Page Count",
+      "type": "select",
+      "options": [
+        {
+          "label": "Under 20 pages",
+          "cost": 1500
+        },
+        {
+          "label": "20-50 pages",
+          "cost": 3000
+        },
+        {
+          "label": "50-100 pages",
+          "cost": 5000
+        },
+        {
+          "label": "100+ pages",
+          "cost": 8000
+        }
+      ]
+    },
+    {
+      "id": "ada2",
+      "label": "WCAG Level",
+      "type": "select",
+      "options": [
+        {
+          "label": "WCAG 2.1 Level A",
+          "cost": 1000
+        },
+        {
+          "label": "WCAG 2.1 Level AA",
+          "cost": 2500
+        },
+        {
+          "label": "WCAG 2.1 Level AAA",
+          "cost": 5000
+        }
+      ]
+    },
+    {
+      "id": "ada3",
+      "label": "Remediation Scope",
+      "type": "select",
+      "options": [
+        {
+          "label": "Audit only",
+          "cost": 0
+        },
+        {
+          "label": "Audit + basic fixes",
+          "cost": 2000
+        },
+        {
+          "label": "Full remediation",
+          "cost": 6000
+        }
+      ]
+    },
+    {
+      "id": "ada4",
+      "label": "Testing Method",
+      "type": "select",
+      "options": [
+        {
+          "label": "Automated testing only",
+          "cost": 500
+        },
+        {
+          "label": "Automated + manual testing",
+          "cost": 2000
+        },
+        {
+          "label": "Full assistive technology testing",
+          "cost": 4000
+        }
+      ]
+    },
+    {
+      "id": "ada5",
+      "label": "Additional",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Accessibility statement page",
+          "cost": 300
+        },
+        {
+          "label": "Staff training",
+          "cost": 1000
+        },
+        {
+          "label": "Ongoing monitoring",
+          "cost": 1500
+        }
+      ]
+    }
+  ]
+}

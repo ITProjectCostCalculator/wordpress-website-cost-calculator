@@ -1,0 +1,101 @@
+{
+  "id": "custom-portal",
+  "name": "Custom Portal Development Cost Calculator",
+  "category": "industry-solutions",
+  "icon": "🚪",
+  "description": "Estimate custom web portal development costs.",
+  "inputs": [
+    {
+      "id": "cp1",
+      "label": "Portal Type",
+      "type": "select",
+      "options": [
+        {
+          "label": "Client portal",
+          "cost": 10000
+        },
+        {
+          "label": "Employee portal",
+          "cost": 12000
+        },
+        {
+          "label": "Partner/vendor portal",
+          "cost": 15000
+        },
+        {
+          "label": "Multi-portal platform",
+          "cost": 30000
+        }
+      ]
+    },
+    {
+      "id": "cp2",
+      "label": "User Roles",
+      "type": "select",
+      "options": [
+        {
+          "label": "2-3 roles",
+          "cost": 2000
+        },
+        {
+          "label": "5+ roles",
+          "cost": 5000
+        },
+        {
+          "label": "Complex hierarchy",
+          "cost": 10000
+        }
+      ]
+    },
+    {
+      "id": "cp3",
+      "label": "Dashboard",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic dashboard",
+          "cost": 3000
+        },
+        {
+          "label": "Advanced widgets",
+          "cost": 6000
+        },
+        {
+          "label": "Custom analytics dashboard",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "cp4",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Document management",
+          "cost": 3000
+        },
+        {
+          "label": "Notifications system",
+          "cost": 1500
+        },
+        {
+          "label": "Messaging/chat",
+          "cost": 3000
+        },
+        {
+          "label": "Approval workflows",
+          "cost": 2500
+        },
+        {
+          "label": "Integrations",
+          "cost": 3000
+        },
+        {
+          "label": "Reporting",
+          "cost": 2500
+        }
+      ]
+    }
+  ]
+}

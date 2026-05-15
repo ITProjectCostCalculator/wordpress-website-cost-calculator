@@ -1,0 +1,97 @@
+{
+  "id": "education-app",
+  "name": "Education App Development Cost Calculator",
+  "category": "industry-solutions",
+  "icon": "📚",
+  "description": "Calculate education/e-learning app development costs.",
+  "inputs": [
+    {
+      "id": "ed1",
+      "label": "Platform",
+      "type": "select",
+      "options": [
+        {
+          "label": "Web only",
+          "cost": 10000
+        },
+        {
+          "label": "Web + Mobile",
+          "cost": 20000
+        },
+        {
+          "label": "Full platform (web + iOS + Android)",
+          "cost": 30000
+        }
+      ]
+    },
+    {
+      "id": "ed2",
+      "label": "Course Delivery",
+      "type": "select",
+      "options": [
+        {
+          "label": "Pre-recorded video",
+          "cost": 5000
+        },
+        {
+          "label": "Live classes + recorded",
+          "cost": 12000
+        },
+        {
+          "label": "Interactive + gamified",
+          "cost": 20000
+        }
+      ]
+    },
+    {
+      "id": "ed3",
+      "label": "Assessment",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic quizzes",
+          "cost": 2000
+        },
+        {
+          "label": "Advanced testing",
+          "cost": 5000
+        },
+        {
+          "label": "AI-adaptive assessments",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "ed4",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Student dashboard",
+          "cost": 3000
+        },
+        {
+          "label": "Teacher panel",
+          "cost": 3000
+        },
+        {
+          "label": "Progress tracking",
+          "cost": 2000
+        },
+        {
+          "label": "Certificates",
+          "cost": 1500
+        },
+        {
+          "label": "Discussion forums",
+          "cost": 2000
+        },
+        {
+          "label": "Payment system",
+          "cost": 3000
+        }
+      ]
+    }
+  ]
+}

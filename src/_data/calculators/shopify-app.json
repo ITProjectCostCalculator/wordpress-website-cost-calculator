@@ -1,0 +1,108 @@
+{
+  "id": "shopify-app",
+  "name": "Shopify App Development Cost Calculator",
+  "category": "ecommerce",
+  "icon": "🧩",
+  "description": "Estimate custom Shopify app development costs.",
+  "inputs": [
+    {
+      "id": "sha1",
+      "label": "App Type",
+      "type": "select",
+      "options": [
+        {
+          "label": "Simple embedded app",
+          "cost": 5000
+        },
+        {
+          "label": "Complex embedded app",
+          "cost": 15000
+        },
+        {
+          "label": "Public marketplace app",
+          "cost": 25000
+        }
+      ]
+    },
+    {
+      "id": "sha2",
+      "label": "Admin Features",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic settings",
+          "cost": 1000
+        },
+        {
+          "label": "Full admin dashboard",
+          "cost": 4000
+        },
+        {
+          "label": "Advanced analytics + admin",
+          "cost": 8000
+        }
+      ]
+    },
+    {
+      "id": "sha3",
+      "label": "Storefront Features",
+      "type": "select",
+      "options": [
+        {
+          "label": "No storefront changes",
+          "cost": 0
+        },
+        {
+          "label": "Theme app extension",
+          "cost": 3000
+        },
+        {
+          "label": "Custom storefront blocks",
+          "cost": 6000
+        }
+      ]
+    },
+    {
+      "id": "sha4",
+      "label": "API Usage",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic APIs",
+          "cost": 1000
+        },
+        {
+          "label": "Advanced API (GraphQL)",
+          "cost": 3000
+        },
+        {
+          "label": "Complex multi-API",
+          "cost": 6000
+        }
+      ]
+    },
+    {
+      "id": "sha5",
+      "label": "Additional",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Billing integration",
+          "cost": 2000
+        },
+        {
+          "label": "Webhooks",
+          "cost": 1000
+        },
+        {
+          "label": "App listing (Shopify Store)",
+          "cost": 1500
+        },
+        {
+          "label": "Automated testing",
+          "cost": 2000
+        }
+      ]
+    }
+  ]
+}

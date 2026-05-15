@@ -1,0 +1,116 @@
+{
+  "id": "api-development",
+  "name": "API Development Cost Calculator",
+  "category": "cloud-devops",
+  "icon": "🔌",
+  "description": "Estimate API design and development costs.",
+  "inputs": [
+    {
+      "id": "ap1",
+      "label": "API Count",
+      "type": "select",
+      "options": [
+        {
+          "label": "1-5 endpoints",
+          "cost": 3000
+        },
+        {
+          "label": "6-15 endpoints",
+          "cost": 8000
+        },
+        {
+          "label": "16-30 endpoints",
+          "cost": 15000
+        },
+        {
+          "label": "30+ endpoints",
+          "cost": 25000
+        }
+      ]
+    },
+    {
+      "id": "ap2",
+      "label": "Authentication",
+      "type": "select",
+      "options": [
+        {
+          "label": "API keys",
+          "cost": 500
+        },
+        {
+          "label": "OAuth 2.0",
+          "cost": 2000
+        },
+        {
+          "label": "Enterprise (JWT + RBAC)",
+          "cost": 5000
+        }
+      ]
+    },
+    {
+      "id": "ap3",
+      "label": "Documentation",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic docs",
+          "cost": 500
+        },
+        {
+          "label": "OpenAPI/Swagger",
+          "cost": 1500
+        },
+        {
+          "label": "Developer portal",
+          "cost": 4000
+        }
+      ]
+    },
+    {
+      "id": "ap4",
+      "label": "Rate Limiting",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic throttling",
+          "cost": 500
+        },
+        {
+          "label": "Tiered rate limits",
+          "cost": 1500
+        },
+        {
+          "label": "Usage-based metering",
+          "cost": 4000
+        }
+      ]
+    },
+    {
+      "id": "ap5",
+      "label": "Additional",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Automated testing",
+          "cost": 2000
+        },
+        {
+          "label": "Versioning strategy",
+          "cost": 1000
+        },
+        {
+          "label": "Webhook support",
+          "cost": 1500
+        },
+        {
+          "label": "GraphQL layer",
+          "cost": 4000
+        },
+        {
+          "label": "SDKs/client libraries",
+          "cost": 3000
+        }
+      ]
+    }
+  ]
+}

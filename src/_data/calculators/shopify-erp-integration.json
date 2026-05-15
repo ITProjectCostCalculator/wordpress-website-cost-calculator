@@ -1,0 +1,101 @@
+{
+  "id": "shopify-erp-integration",
+  "name": "Shopify ERP Integration Cost Calculator",
+  "category": "ecommerce",
+  "icon": "🔄",
+  "description": "Calculate Shopify to ERP integration costs.",
+  "inputs": [
+    {
+      "id": "sei1",
+      "label": "ERP System",
+      "type": "select",
+      "options": [
+        {
+          "label": "QuickBooks",
+          "cost": 3000
+        },
+        {
+          "label": "Odoo",
+          "cost": 5000
+        },
+        {
+          "label": "SAP Business One",
+          "cost": 10000
+        },
+        {
+          "label": "NetSuite",
+          "cost": 12000
+        },
+        {
+          "label": "Microsoft Dynamics",
+          "cost": 10000
+        }
+      ]
+    },
+    {
+      "id": "sei2",
+      "label": "Sync Objects",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Products/inventory",
+          "cost": 2000
+        },
+        {
+          "label": "Orders",
+          "cost": 2000
+        },
+        {
+          "label": "Customers",
+          "cost": 1500
+        },
+        {
+          "label": "Pricing",
+          "cost": 1500
+        },
+        {
+          "label": "Financial data",
+          "cost": 3000
+        }
+      ]
+    },
+    {
+      "id": "sei3",
+      "label": "Sync Frequency",
+      "type": "select",
+      "options": [
+        {
+          "label": "Daily sync",
+          "cost": 1000
+        },
+        {
+          "label": "Hourly sync",
+          "cost": 2000
+        },
+        {
+          "label": "Real-time sync",
+          "cost": 5000
+        }
+      ]
+    },
+    {
+      "id": "sei4",
+      "label": "Error Handling",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic logging",
+          "cost": 500
+        },
+        {
+          "label": "Alerts + retry logic",
+          "cost": 2000
+        },
+        {
+          "label": "Advanced error handling + dashboard",
+          "cost": 4000
+        }
+      ]
+    }
+  ]
+}

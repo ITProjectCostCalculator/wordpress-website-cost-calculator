@@ -1,0 +1,108 @@
+{
+  "id": "netsuite",
+  "name": "NetSuite Implementation Cost Calculator",
+  "category": "erp-systems",
+  "icon": "🔶",
+  "description": "Estimate Oracle NetSuite implementation costs.",
+  "inputs": [
+    {
+      "id": "ns1",
+      "label": "Subsidiaries",
+      "type": "select",
+      "options": [
+        {
+          "label": "Single entity",
+          "cost": 20000
+        },
+        {
+          "label": "2-5 subsidiaries",
+          "cost": 45000
+        },
+        {
+          "label": "5+ subsidiaries",
+          "cost": 80000
+        }
+      ]
+    },
+    {
+      "id": "ns2",
+      "label": "Users",
+      "type": "select",
+      "options": [
+        {
+          "label": "1-10 users",
+          "cost": 8000
+        },
+        {
+          "label": "11-50 users",
+          "cost": 20000
+        },
+        {
+          "label": "50+ users",
+          "cost": 40000
+        }
+      ]
+    },
+    {
+      "id": "ns3",
+      "label": "Custom Workflows",
+      "type": "select",
+      "options": [
+        {
+          "label": "Standard",
+          "cost": 0
+        },
+        {
+          "label": "5-10 workflows",
+          "cost": 8000
+        },
+        {
+          "label": "Complex automation",
+          "cost": 20000
+        }
+      ]
+    },
+    {
+      "id": "ns4",
+      "label": "Integrations",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic",
+          "cost": 5000
+        },
+        {
+          "label": "Multiple systems",
+          "cost": 15000
+        },
+        {
+          "label": "Enterprise integration suite",
+          "cost": 35000
+        }
+      ]
+    },
+    {
+      "id": "ns5",
+      "label": "Additional",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Custom reporting",
+          "cost": 5000
+        },
+        {
+          "label": "Data migration",
+          "cost": 10000
+        },
+        {
+          "label": "Training",
+          "cost": 5000
+        },
+        {
+          "label": "Support plan",
+          "cost": 8000
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "id": "shopify-headless",
+  "name": "Shopify Headless Cost Calculator",
+  "category": "ecommerce",
+  "icon": "🔗",
+  "description": "Calculate Shopify headless/hydrogen storefront costs.",
+  "inputs": [
+    {
+      "id": "sh1",
+      "label": "Frontend Stack",
+      "type": "select",
+      "options": [
+        {
+          "label": "Hydrogen (Remix)",
+          "cost": 8000
+        },
+        {
+          "label": "Next.js",
+          "cost": 10000
+        },
+        {
+          "label": "Gatsby",
+          "cost": 7000
+        },
+        {
+          "label": "Custom React",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "sh2",
+      "label": "CMS Integration",
+      "type": "select",
+      "options": [
+        {
+          "label": "Shopify metafields only",
+          "cost": 1000
+        },
+        {
+          "label": "Headless CMS (Contentful/Sanity)",
+          "cost": 4000
+        },
+        {
+          "label": "Custom CMS",
+          "cost": 8000
+        }
+      ]
+    },
+    {
+      "id": "sh3",
+      "label": "Checkout Setup",
+      "type": "select",
+      "options": [
+        {
+          "label": "Shopify hosted checkout",
+          "cost": 0
+        },
+        {
+          "label": "Custom checkout UI",
+          "cost": 5000
+        },
+        {
+          "label": "Full custom checkout",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "sh4",
+      "label": "Hosting & CI/CD",
+      "type": "select",
+      "options": [
+        {
+          "label": "Oxygen (Shopify)",
+          "cost": 500
+        },
+        {
+          "label": "Vercel/Netlify",
+          "cost": 1000
+        },
+        {
+          "label": "Custom cloud hosting",
+          "cost": 3000
+        }
+      ]
+    },
+    {
+      "id": "sh5",
+      "label": "Performance",
+      "type": "select",
+      "options": [
+        {
+          "label": "Standard optimization",
+          "cost": 1000
+        },
+        {
+          "label": "Advanced (CDN + edge)",
+          "cost": 3000
+        },
+        {
+          "label": "Ultra-performance",
+          "cost": 6000
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "id": "landing-page",
+  "name": "Landing Page Cost Calculator",
+  "category": "web-development",
+  "icon": "📄",
+  "description": "Estimate the cost of high-converting landing pages for marketing campaigns.",
+  "inputs": [
+    {
+      "id": "l1",
+      "label": "Number of Sections",
+      "type": "select",
+      "options": [
+        {
+          "label": "3-5 sections",
+          "cost": 800
+        },
+        {
+          "label": "6-10 sections",
+          "cost": 1500
+        },
+        {
+          "label": "10+ sections",
+          "cost": 3000
+        }
+      ]
+    },
+    {
+      "id": "l2",
+      "label": "Copywriting",
+      "type": "select",
+      "options": [
+        {
+          "label": "Client provides copy",
+          "cost": 0
+        },
+        {
+          "label": "Basic copywriting",
+          "cost": 600
+        },
+        {
+          "label": "Professional conversion copywriting",
+          "cost": 2000
+        }
+      ]
+    },
+    {
+      "id": "l3",
+      "label": "Form & CRM Integration",
+      "type": "select",
+      "options": [
+        {
+          "label": "Simple contact form",
+          "cost": 200
+        },
+        {
+          "label": "Multi-step form + CRM",
+          "cost": 1200
+        },
+        {
+          "label": "Advanced automation + CRM",
+          "cost": 3000
+        }
+      ]
+    },
+    {
+      "id": "l4",
+      "label": "A/B Testing Setup",
+      "type": "select",
+      "options": [
+        {
+          "label": "No A/B testing",
+          "cost": 0
+        },
+        {
+          "label": "Basic A/B testing",
+          "cost": 800
+        },
+        {
+          "label": "Advanced multivariate testing",
+          "cost": 2000
+        }
+      ]
+    },
+    {
+      "id": "l5",
+      "label": "Speed Optimization",
+      "type": "select",
+      "options": [
+        {
+          "label": "Standard",
+          "cost": 0
+        },
+        {
+          "label": "Performance optimized",
+          "cost": 500
+        },
+        {
+          "label": "Ultra-fast (<1s load)",
+          "cost": 1500
+        }
+      ]
+    },
+    {
+      "id": "l6",
+      "label": "Additional Pages",
+      "type": "range",
+      "min": 0,
+      "max": 10,
+      "default": 0,
+      "costPerUnit": 500,
+      "unit": "pages"
+    }
+  ]
+}

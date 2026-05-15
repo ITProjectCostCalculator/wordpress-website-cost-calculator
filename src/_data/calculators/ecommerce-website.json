@@ -1,0 +1,139 @@
+{
+  "id": "ecommerce-website",
+  "name": "eCommerce Website Cost Calculator",
+  "category": "ecommerce",
+  "icon": "🛒",
+  "description": "Estimate eCommerce website development costs.",
+  "inputs": [
+    {
+      "id": "ec1",
+      "label": "Platform",
+      "type": "select",
+      "options": [
+        {
+          "label": "Shopify",
+          "cost": 3000
+        },
+        {
+          "label": "WooCommerce",
+          "cost": 3500
+        },
+        {
+          "label": "Magento",
+          "cost": 10000
+        },
+        {
+          "label": "Custom built",
+          "cost": 25000
+        }
+      ]
+    },
+    {
+      "id": "ec2",
+      "label": "Product Count",
+      "type": "select",
+      "options": [
+        {
+          "label": "Under 50",
+          "cost": 1000
+        },
+        {
+          "label": "50-500",
+          "cost": 3000
+        },
+        {
+          "label": "500-5000",
+          "cost": 6000
+        },
+        {
+          "label": "5000+",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "ec3",
+      "label": "Payment Setup",
+      "type": "select",
+      "options": [
+        {
+          "label": "Single gateway",
+          "cost": 500
+        },
+        {
+          "label": "Multiple gateways",
+          "cost": 1500
+        },
+        {
+          "label": "International payments",
+          "cost": 3000
+        }
+      ]
+    },
+    {
+      "id": "ec4",
+      "label": "Shipping",
+      "type": "select",
+      "options": [
+        {
+          "label": "Flat rate",
+          "cost": 300
+        },
+        {
+          "label": "Carrier-calculated",
+          "cost": 1000
+        },
+        {
+          "label": "Complex shipping rules",
+          "cost": 3000
+        }
+      ]
+    },
+    {
+      "id": "ec5",
+      "label": "Design Level",
+      "type": "select",
+      "options": [
+        {
+          "label": "Theme-based",
+          "cost": 1000
+        },
+        {
+          "label": "Custom design",
+          "cost": 5000
+        },
+        {
+          "label": "Premium custom design",
+          "cost": 12000
+        }
+      ]
+    },
+    {
+      "id": "ec6",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Product reviews",
+          "cost": 500
+        },
+        {
+          "label": "Wishlist",
+          "cost": 400
+        },
+        {
+          "label": "Loyalty program",
+          "cost": 2000
+        },
+        {
+          "label": "Multi-currency",
+          "cost": 1500
+        },
+        {
+          "label": "Subscription products",
+          "cost": 2500
+        }
+      ]
+    }
+  ]
+}

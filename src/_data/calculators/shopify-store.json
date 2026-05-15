@@ -1,0 +1,118 @@
+{
+  "id": "shopify-store",
+  "name": "Shopify Store Development Cost Calculator",
+  "category": "ecommerce",
+  "icon": "🟢",
+  "description": "Calculate Shopify store setup and customization costs.",
+  "inputs": [
+    {
+      "id": "ss1",
+      "label": "Theme",
+      "type": "select",
+      "options": [
+        {
+          "label": "Free theme setup",
+          "cost": 500
+        },
+        {
+          "label": "Premium theme customization",
+          "cost": 2000
+        },
+        {
+          "label": "Fully custom theme",
+          "cost": 8000
+        }
+      ]
+    },
+    {
+      "id": "ss2",
+      "label": "Custom Design",
+      "type": "select",
+      "options": [
+        {
+          "label": "Minimal customization",
+          "cost": 500
+        },
+        {
+          "label": "Branded design",
+          "cost": 3000
+        },
+        {
+          "label": "Premium design",
+          "cost": 7000
+        }
+      ]
+    },
+    {
+      "id": "ss3",
+      "label": "Pages",
+      "type": "range",
+      "min": 1,
+      "max": 30,
+      "default": 5,
+      "costPerUnit": 200,
+      "unit": "pages"
+    },
+    {
+      "id": "ss4",
+      "label": "Apps & Integrations",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic apps (3-5)",
+          "cost": 500
+        },
+        {
+          "label": "Advanced apps (5-10)",
+          "cost": 1500
+        },
+        {
+          "label": "Custom app development",
+          "cost": 5000
+        }
+      ]
+    },
+    {
+      "id": "ss5",
+      "label": "Products",
+      "type": "select",
+      "options": [
+        {
+          "label": "Under 50",
+          "cost": 300
+        },
+        {
+          "label": "50-200",
+          "cost": 800
+        },
+        {
+          "label": "200+",
+          "cost": 1500
+        }
+      ]
+    },
+    {
+      "id": "ss6",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Custom checkout",
+          "cost": 1500
+        },
+        {
+          "label": "Product reviews",
+          "cost": 300
+        },
+        {
+          "label": "SEO optimization",
+          "cost": 800
+        },
+        {
+          "label": "Email marketing setup",
+          "cost": 500
+        }
+      ]
+    }
+  ]
+}

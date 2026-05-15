@@ -1,0 +1,54 @@
+---
+layout: layouts/base.njk
+seoTitle: "{{ homepage.seoTitle }}"
+seoDescription: "{{ homepage.seoDescription }}"
+---
+<main id="home-view">
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-badge">⚡ 80+ Free IT Calculators</div>
+            <h1 class="hero-title">{{ homepage.heroTitle | safe }}</h1>
+            <p class="hero-subtitle">{{ homepage.heroSubtitle }}</p>
+        </div>
+    </section>
+
+    <section class="search-section">
+        <div class="search-bar-wrap">
+            <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            <input type="text" id="search-input" class="search-input" placeholder="Search calculators... (e.g. Shopify, Mobile App, ERP)" autocomplete="off">
+            <span class="search-count" id="search-count">80 calculators</span>
+        </div>
+        <div class="filter-tabs" id="filter-tabs">
+            <button class="filter-tab active" data-category="all">All</button>
+            <button class="filter-tab" data-category="web-development">🌐 Web Dev</button>
+            <button class="filter-tab" data-category="mobile-apps">📱 Mobile</button>
+            <button class="filter-tab" data-category="web-apps-saas">🖥️ Web Apps</button>
+            <button class="filter-tab" data-category="erp-systems">🏢 ERP</button>
+            <button class="filter-tab" data-category="ecommerce">🛒 eCommerce</button>
+            <button class="filter-tab" data-category="ai-data">🤖 AI & Data</button>
+            <button class="filter-tab" data-category="cloud-devops">☁️ Cloud & DevOps</button>
+            <button class="filter-tab" data-category="industry-solutions">🏗️ Industry</button>
+        </div>
+    </section>
+
+    <section class="grid-section">
+        <div class="calculator-grid" id="calculator-grid"></div>
+        <div class="no-results hidden" id="no-results">
+            <div class="no-results-icon">🔍</div>
+            <h3>No calculators found</h3>
+            <p>Try a different search term or category.</p>
+        </div>
+    </section>
+</main>
+
+{% block scripts %}
+<!-- We need to provide the calculators data to app.js -->
+<script>
+    var CALCULATORS = [
+        {% for item, calc in calculators %}
+        {{ calc | dump | safe }}{% if not loop.last %},{% endif %}
+        {% endfor %}
+    ];
+</script>
+<script src="/js/app.js"></script>
+{% endblock %}

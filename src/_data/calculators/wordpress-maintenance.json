@@ -1,0 +1,131 @@
+{
+  "id": "wordpress-maintenance",
+  "name": "WordPress Maintenance Cost Calculator",
+  "category": "web-development",
+  "icon": "🔧",
+  "description": "Calculate ongoing WordPress maintenance and support costs.",
+  "inputs": [
+    {
+      "id": "wm1",
+      "label": "Monthly Support Hours",
+      "type": "select",
+      "options": [
+        {
+          "label": "5 hours/month",
+          "cost": 250
+        },
+        {
+          "label": "10 hours/month",
+          "cost": 450
+        },
+        {
+          "label": "20 hours/month",
+          "cost": 800
+        },
+        {
+          "label": "40 hours/month",
+          "cost": 1500
+        }
+      ]
+    },
+    {
+      "id": "wm2",
+      "label": "Updates & Patches",
+      "type": "select",
+      "options": [
+        {
+          "label": "Monthly updates",
+          "cost": 100
+        },
+        {
+          "label": "Weekly updates",
+          "cost": 250
+        },
+        {
+          "label": "Real-time monitoring",
+          "cost": 500
+        }
+      ]
+    },
+    {
+      "id": "wm3",
+      "label": "Backup Frequency",
+      "type": "select",
+      "options": [
+        {
+          "label": "Weekly backups",
+          "cost": 50
+        },
+        {
+          "label": "Daily backups",
+          "cost": 100
+        },
+        {
+          "label": "Real-time backups",
+          "cost": 250
+        }
+      ]
+    },
+    {
+      "id": "wm4",
+      "label": "Security Services",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Malware scanning",
+          "cost": 100
+        },
+        {
+          "label": "Firewall setup",
+          "cost": 150
+        },
+        {
+          "label": "SSL management",
+          "cost": 50
+        },
+        {
+          "label": "Security monitoring",
+          "cost": 200
+        }
+      ]
+    },
+    {
+      "id": "wm5",
+      "label": "Performance Monitoring",
+      "type": "select",
+      "options": [
+        {
+          "label": "Monthly speed checks",
+          "cost": 50
+        },
+        {
+          "label": "Weekly optimization",
+          "cost": 150
+        },
+        {
+          "label": "Continuous monitoring",
+          "cost": 300
+        }
+      ]
+    },
+    {
+      "id": "wm6",
+      "label": "Support SLA",
+      "type": "select",
+      "options": [
+        {
+          "label": "48-hour response",
+          "cost": 0
+        },
+        {
+          "label": "24-hour response",
+          "cost": 200
+        },
+        {
+          "label": "4-hour response",
+          "cost": 500
+        }
+      ]
+    }
+  ]
+}

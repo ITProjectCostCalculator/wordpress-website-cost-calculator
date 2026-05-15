@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Manager</title>
+    <!-- Provide the config URL explicitly -->
+    <link href="config.yml" type="text/yaml" rel="cms-config-url">
+    
+    <script>
+      // Prevent automatic initialization
+      window.CMS_MANUAL_INIT = true;
+
+      window.onerror = function(msg, url, lineNo, columnNo, error) {
+        document.body.innerHTML += '<div style="color:red; padding: 20px;"><h3>Decap CMS Error:</h3><p>' + msg + '</p><pre>' + (error && error.stack ? error.stack : '') + '</pre></div>';
+        return false;
+      };
+    </script>
+
+    <!-- Include Decap CMS -->
+    <script src="https://unpkg.com/decap-cms@^3.1.2/dist/decap-cms.js"></script>
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        // Find our root element
+        const root = document.getElementById('nc-root');
+        
+        // Remove absolutely everything else from the body that might have been injected 
+        // by Eleventy Live Reload, Chrome extensions, etc. to prevent React crashes.
+        Array.from(document.body.childNodes).forEach(node => {
+          if (node !== root) {
+            node.remove();
+          }
+        });
+
+        // Initialize CMS manually into our isolated root
+        CMS.init();
+      });
+    </script>
+  </head>
+  <body>
+    <div id="nc-root"></div>
+  </body>
+</html>

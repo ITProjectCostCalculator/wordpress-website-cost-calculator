@@ -1,0 +1,78 @@
+{
+  "id": "shopify-audit",
+  "name": "Shopify Website Audit Cost Calculator",
+  "category": "ecommerce",
+  "icon": "🔍",
+  "description": "Calculate Shopify store audit and optimization costs.",
+  "inputs": [
+    {
+      "id": "sau1",
+      "label": "Store Size",
+      "type": "select",
+      "options": [
+        {
+          "label": "Small (under 50 pages)",
+          "cost": 800
+        },
+        {
+          "label": "Medium (50-200 pages)",
+          "cost": 1500
+        },
+        {
+          "label": "Large (200+ pages)",
+          "cost": 3000
+        }
+      ]
+    },
+    {
+      "id": "sau2",
+      "label": "Audit Scope",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "SEO audit",
+          "cost": 800
+        },
+        {
+          "label": "Speed/performance audit",
+          "cost": 600
+        },
+        {
+          "label": "UX/conversion audit",
+          "cost": 1000
+        },
+        {
+          "label": "Accessibility audit",
+          "cost": 800
+        },
+        {
+          "label": "Security audit",
+          "cost": 600
+        },
+        {
+          "label": "Code quality review",
+          "cost": 1000
+        }
+      ]
+    },
+    {
+      "id": "sau3",
+      "label": "Report Type",
+      "type": "select",
+      "options": [
+        {
+          "label": "Summary report",
+          "cost": 0
+        },
+        {
+          "label": "Detailed with recommendations",
+          "cost": 500
+        },
+        {
+          "label": "Detailed + implementation roadmap",
+          "cost": 1500
+        }
+      ]
+    }
+  ]
+}

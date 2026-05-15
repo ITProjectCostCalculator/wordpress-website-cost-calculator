@@ -1,0 +1,118 @@
+{
+  "id": "ios-app",
+  "name": "iOS App Development Cost Calculator",
+  "category": "mobile-apps",
+  "icon": "🍎",
+  "description": "Calculate iOS-specific app development costs with native Swift features.",
+  "inputs": [
+    {
+      "id": "ios1",
+      "label": "Device Support",
+      "type": "select",
+      "options": [
+        {
+          "label": "iPhone only",
+          "cost": 5000
+        },
+        {
+          "label": "iPhone + iPad",
+          "cost": 9000
+        },
+        {
+          "label": "Universal (all Apple devices)",
+          "cost": 14000
+        }
+      ]
+    },
+    {
+      "id": "ios2",
+      "label": "Native Features",
+      "type": "select",
+      "options": [
+        {
+          "label": "Basic (standard UI)",
+          "cost": 3000
+        },
+        {
+          "label": "Advanced (ARKit, Core ML)",
+          "cost": 10000
+        },
+        {
+          "label": "Complex (HealthKit, HomeKit)",
+          "cost": 18000
+        }
+      ]
+    },
+    {
+      "id": "ios3",
+      "label": "Screen Count",
+      "type": "range",
+      "min": 3,
+      "max": 50,
+      "default": 8,
+      "costPerUnit": 800,
+      "unit": "screens"
+    },
+    {
+      "id": "ios4",
+      "label": "Backend & API",
+      "type": "select",
+      "options": [
+        {
+          "label": "Simple REST API",
+          "cost": 3000
+        },
+        {
+          "label": "Complex API + real-time",
+          "cost": 8000
+        },
+        {
+          "label": "Enterprise API suite",
+          "cost": 18000
+        }
+      ]
+    },
+    {
+      "id": "ios5",
+      "label": "Features",
+      "type": "checkbox",
+      "options": [
+        {
+          "label": "Apple Sign-In",
+          "cost": 1000
+        },
+        {
+          "label": "In-App Purchases",
+          "cost": 3000
+        },
+        {
+          "label": "Push Notifications (APNs)",
+          "cost": 1200
+        },
+        {
+          "label": "Offline mode",
+          "cost": 3000
+        },
+        {
+          "label": "Biometric auth",
+          "cost": 1500
+        }
+      ]
+    },
+    {
+      "id": "ios6",
+      "label": "App Store Submission",
+      "type": "select",
+      "options": [
+        {
+          "label": "Self-managed",
+          "cost": 0
+        },
+        {
+          "label": "Managed submission + ASO",
+          "cost": 1500
+        }
+      ]
+    }
+  ]
+}
